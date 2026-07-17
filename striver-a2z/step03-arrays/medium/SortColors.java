@@ -1,7 +1,6 @@
 /*
  * Problem: Sort array of 0s, 1s, 2s (Dutch national flag) — Striver A2Z Step 3 (medium) / LeetCode 75
  * Migrated: 2026-07-17 | Target TC: O(N) one pass
- * WARNING: known bugs — high = arr.length (out of bounds) and wrong loop condition. Fix session pending.
  * Revisit: [date]
  */
 import java.util.*;
@@ -9,7 +8,7 @@ import java.util.*;
 public class SortColors {
   public static void main(String[] args) {
     int[] arr = {2, 0, 2, 1, 1, 0};
-    // sortArrayOfZeroes_Ones_Twos(arr); // crashes — see WARNING above
+    sortArrayOfZeroes_Ones_Twos(arr);
     System.out.println(Arrays.toString(arr));
   }
 

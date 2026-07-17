@@ -37,7 +37,7 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 |---|---|---|---|---|
 | Longest subarray sum K | step03-arrays/medium/LongestSubarraySumK.java | brute + prefix-hash + two pointers | ✅ | |
 | Two sum | step03-arrays/medium/TwoSum.java | HashMap + two pointers | ✅ | |
-| Sort colors (0/1/2) | step03-arrays/medium/SortColors.java | Dutch national flag | ⚠️ OOB bug | |
+| Sort colors (0/1/2) | step03-arrays/medium/SortColors.java | Dutch national flag | ✅ |
 | Majority element | step03-arrays/medium/MajorityElement.java | HashMap + Boyer-Moore | ✅ | |
 
 ## LeetCode extras
