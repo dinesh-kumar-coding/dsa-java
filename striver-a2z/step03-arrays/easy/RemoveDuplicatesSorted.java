@@ -6,10 +6,10 @@
 public class RemoveDuplicatesSorted {
   public static void main(String[] args) {
     int[] arr = {1, 1, 2, 2, 2, 3, 3};
-    System.out.println(getNumberOfNonDubplicatesFromSortedArray(arr));
+    System.out.println(getNumberOfNonDuplicatesFromSortedArray(arr));
   }
 
-  public static int getNumberOfNonDubplicatesFromSortedArray(int[] arr){
+  public static int getNumberOfNonDuplicatesFromSortedArray(int[] arr){
     if(arr.length == 0) return 0;
     int i = 0;
     for(int j = 1; j < arr.length; j++){

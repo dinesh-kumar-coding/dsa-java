@@ -14,8 +14,8 @@ public class SortColors {
   }
 
   public static void sortArrayOfZeroes_Ones_Twos(int[] arr){
-    int low = 0, mid = 0, high = arr.length;
-    while( high >= low){
+    int low = 0, mid = 0, high = arr.length - 1;
+    while( high >= mid){
       if(arr[mid] == 0){
         swap(arr, low, mid);
         low++;
