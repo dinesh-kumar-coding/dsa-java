@@ -26,21 +26,25 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Second largest/smallest | step03-arrays/easy/SecondLargestSmallest.java | single pass | ✅ | |
 | Remove duplicates (sorted) | step03-arrays/easy/RemoveDuplicatesSorted.java | two pointers | ✅ | |
 | Check sorted | step03-arrays/easy/CheckSorted.java | O(N) | ✅ | |
-| Rotate by K | step03-arrays/easy/RotateArray.java | reversal algorithm | ✅ (left-by-one stub TODO) | |
+| Rotate by K | step03-arrays/easy/RotateArray.java | reversal algorithm | ✅ | |
 | Move zeros | step03-arrays/easy/MoveZeros.java | brute + optimal two pointers | ✅ | |
-| Union + intersection (sorted) | step03-arrays/easy/UnionIntersectionSorted.java | two pointers | ⚠️ union bug | |
+| Union + intersection (sorted) | step03-arrays/easy/UnionIntersectionSorted.java | two pointers | ✅ | |
 | Missing number | step03-arrays/easy/MissingNumber.java | XOR | ✅ | |
 | Single number | step03-arrays/easy/SingleNumber.java | XOR | ✅ | |
+| Longest subarray sum K | step03-arrays/easy/LongestSubarraySumK.java | brute + prefix-hash + two pointers | ✅ | |
 
 ## Step 3 — Arrays (medium) ← current
 | Problem | File | Approaches | Status | Revisit |
 |---|---|---|---|---|
-| Longest subarray sum K | step03-arrays/medium/LongestSubarraySumK.java | brute + prefix-hash + two pointers | ✅ | |
 | Two sum | step03-arrays/medium/TwoSum.java | HashMap + two pointers | ✅ | |
 | Sort colors (0/1/2) | step03-arrays/medium/SortColors.java | Dutch national flag | ✅ |
 | Majority element | step03-arrays/medium/MajorityElement.java | HashMap + Boyer-Moore | ✅ | |
+| Maximum subarray sum (Kadane's) | step03-arrays/medium/MaximumSubarraySum.java | Kadane + print-subarray variant | ✅ | |
+| Best time to buy & sell stock | step03-arrays/medium/StockBuySell.java | min-so-far single pass | ✅ | |
+| Rearrange by sign | step03-arrays/medium/RearrangeBySign.java | brute + optimal O(N) | ✅ | |
 
 ## LeetCode extras
 | Problem | File | Approaches | Status | Revisit |
 |---|---|---|---|---|
 | GCD sum (daily, Jul 16) | leetcode/GcdSum_20260716.java | prefix max + prefix gcd | ✅ | |
+| Find GCD of min & max (daily, Jul 18) | leetcode/FindGcd_20260718.java | min/max scan + Euclid | ✅ | |

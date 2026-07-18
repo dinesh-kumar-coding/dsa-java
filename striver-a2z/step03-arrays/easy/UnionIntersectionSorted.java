@@ -18,7 +18,7 @@ public class UnionIntersectionSorted {
     List<Integer> temp = new ArrayList<>();
     int i = 0, j = 0;
     int n1 = a.length, n2 = b.length;
-    while(i <= n1 - 1 && j <= n2){
+    while(i <= n1 - 1 && j <= n2 - 1){
       if(a[i] <= b[j]){
         if(temp.isEmpty() || temp.get(temp.size() - 1) != a[i]) temp.add(a[i]);
         i++;

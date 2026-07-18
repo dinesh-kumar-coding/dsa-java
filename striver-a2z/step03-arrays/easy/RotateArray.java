@@ -16,10 +16,6 @@ public class RotateArray {
     System.out.println(Arrays.toString(b));
   }
 
-  public static void rotateArrayLeftByOne(int[] arr){
-    // TODO: implement (was empty in original)
-  }
-
   public static void leftRotateArray(int[] nums, int k) {
     int resultK = k%nums.length;
     reverseArray(nums, 0, resultK - 1);
