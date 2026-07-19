@@ -12,7 +12,7 @@ public class MajorityElement {
     System.out.println(majorityElement_optimal(arr));
   }
 
-  public static int majorityElement(int[] nums) {
+  public static int majorityElement_brute(int[] nums) {
     Map<Integer, Integer> hash = new HashMap<>();
     int count = 0;
     int n = nums.length;

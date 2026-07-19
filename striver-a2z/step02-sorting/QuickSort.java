@@ -1,8 +1,6 @@
 /*
  * Topic: Quick sort — Striver A2Z Step 2
  * Migrated: 2026-07-17 | TC: O(N log N) avg, O(N^2) worst
- * WARNING: known bug — partition deadlocks (infinite swap loop) when both pointers stall.
- * Found via automated run 2026-07-17. Fix session pending.
  * Revisit: [date when re-solved from scratch]
  */
 import java.util.*;
@@ -10,7 +8,7 @@ import java.util.*;
 public class QuickSort {
   public static void main(String[] args) {
     int[] arr = {13, 46, 24, 52, 20, 9};
-    // quickSort(arr); // hangs — see WARNING above
+    quickSort(arr);
     System.out.println(Arrays.toString(arr));
   }
 
@@ -41,7 +39,7 @@ public class QuickSort {
         i++;
       }
       // Move j to the left as long as elements are > pivot
-      while(arr[j] < pivot){
+      while(arr[j] > pivot){
         j--;
       }
       // Swap elements if pointers haven't crossed

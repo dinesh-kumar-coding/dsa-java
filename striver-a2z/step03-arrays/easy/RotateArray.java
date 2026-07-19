@@ -1,7 +1,6 @@
 /*
  * Problem: Rotate array left/right by K (reversal algorithm) — Striver A2Z Step 3 (easy)
  * Migrated: 2026-07-17 | TC: O(N), SC: O(1)
- * TODO: rotateArrayLeftByOne was an empty stub in original — implement on revisit
  * Revisit: [date]
  */
 import java.util.*;

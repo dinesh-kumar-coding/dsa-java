@@ -1,7 +1,6 @@
 /*
  * Topic: Bubble sort (iterative + recursive) — Striver A2Z Step 2
  * Migrated: 2026-07-17 | TC: O(N^2) worst/avg, O(N) best (early-exit flag)
- * Note: removed leftover debug println("runs") from original
  * Revisit: [date when re-solved from scratch]
  */
 import java.util.*;
@@ -45,7 +44,7 @@ public class BubbleSort {
         flag = true;
       }
     }
-    if(flag){
+    if(!flag){
       return;
     }
     recursive_bubbleSort(arr, n - 1);
