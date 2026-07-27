@@ -1,0 +1,6 @@
+# Normalize line endings: store as LF in the repo AND check out as LF,
+# so Git stops converting to CRLF (kills the "LF will be replaced by CRLF" warnings).
+* text=auto eol=lf
+
+# Windows batch files must stay CRLF or they can misbehave.
+*.bat text eol=crlf
