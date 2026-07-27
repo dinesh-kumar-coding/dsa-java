@@ -17,7 +17,7 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Bubble sort | step02-sorting/BubbleSort.java | iterative + recursive, early exit | ✅ | |
 | Insertion sort | step02-sorting/InsertionSort.java | iterative + recursive | ✅ | |
 | Merge sort | step02-sorting/MergeSort.java | O(N log N) | ✅ | |
-| Quick sort | step02-sorting/QuickSort.java | partition (buggy) | ⚠️ infinite-loop bug | |
+| Quick sort | step02-sorting/QuickSort.java | partition (buggy) | ✅ | |
 
 ## Step 3 — Arrays (easy)
 | Problem | File | Approaches | Status | Revisit |
@@ -44,7 +44,8 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Rearrange by sign | step03-arrays/medium/RearrangeBySign.java | brute + optimal O(N) | ✅ | |
 | Next permutation | step03-arrays/medium/NextPermutation.java | 3-step: break point, swap, reverse suffix | ✅ | |
 | Leaders in array | step03-arrays/medium/LeadersInArray.java | right-to-left running max | ✅ | |
-| Longest consecutive sequence | step03-arrays/medium/LongestConsecutiveSequence.java | brute (linear search) · better (sort) · optimal (HashSet) | ✅ (brute bug fixed by him — added maxCount tracking) | |
+| Longest consecutive sequence | step03-arrays/medium/LongestConsecutiveSequence.java | brute (linear search) · better (sort) · optimal (HashSet) | ✅ (brute bug fixed — added maxCount tracking) | |
+| Set matrix zeroes | step03-arrays/medium/SetMatrixZeroes.java | brute (marker) · better (row/col arrays) · optimal (in-place markers) | ✅ all 3 (he fixed optimal — swapped flags + `j<m`; brute assumes 0/1 inputs) | |
 
 ## LeetCode extras
 | Problem | File | Approaches | Status | Revisit |
