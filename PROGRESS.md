@@ -46,9 +46,11 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Leaders in array | step03-arrays/medium/LeadersInArray.java | right-to-left running max | ✅ | |
 | Longest consecutive sequence | step03-arrays/medium/LongestConsecutiveSequence.java | brute (linear search) · better (sort) · optimal (HashSet) | ✅ (brute bug fixed — added maxCount tracking) | |
 | Set matrix zeroes | step03-arrays/medium/SetMatrixZeroes.java | brute (marker) · better (row/col arrays) · optimal (in-place markers) | ✅ all 3 (he fixed optimal — swapped flags + `j<m`; brute assumes 0/1 inputs) | |
+| Rotate matrix by 90° | step03-arrays/medium/RotateMatrix.java | brute (index map) · optimal (transpose + reverse rows) | ✅ both (he fixed brute himself: added write-back + CW direction) | |
 
 ## LeetCode extras
 | Problem | File | Approaches | Status | Revisit |
 |---|---|---|---|---|
 | GCD sum (daily, Jul 16) | leetcode/GcdSum_20260716.java | prefix max + prefix gcd | ✅ | |
 | Find GCD of min & max (daily, Jul 18) | leetcode/FindGcd_20260718.java | min/max scan + Euclid | ✅ | |
+| Max product of two elements (daily, Jul 27) | leetcode/MaxProduct_20260727.java | single pass — track top two, `(max-1)*(secondMax-1)` | ✅ | |
