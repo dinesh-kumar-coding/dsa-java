@@ -5,51 +5,52 @@
  */
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class SpiralMatrix {
   public static void main(String[] args) {
-    int[][] arr = {{1,2,3,4},{5,6,7,8}};
+    int[][] arr = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 },{ 9, 10, 11, 12} };
     System.out.println(elementsOfMatrixInSpiralManner(arr));
   }
 
-  public static ArrayList<Integer> elementsOfMatrixInSpiralManner(int[][] arr){
+  public static List<Integer> elementsOfMatrixInSpiralManner(int[][] arr) {
     int n = arr.length;
     int m = arr[0].length;
-    ArrayList<Integer> ans = new ArrayList<>();
+    List<Integer> ans = new ArrayList<>();
     int left = 0, right = m - 1, top = 0, bottom = n - 1;
 
-    while(right >= left && bottom >= top){
-      //right
-      for(int i = left; i <= right; i++){
+    while (right >= left && bottom >= top) {
+      // right
+      for (int i = left; i <= right; i++) {
         ans.add(arr[top][i]);
       }
       top++;
 
-      //down
-      for(int i = top; i <= bottom; i++){
+      // down
+      for (int i = top; i <= bottom; i++) {
         ans.add(arr[i][right]);
       }
       right--;
 
-      if(bottom >= top){
-        //left
-        for(int i = right; i >= left; i--){
+      if (bottom >= top) {
+        // left
+        for (int i = right; i >= left; i--) {
           ans.add(arr[bottom][i]);
         }
         bottom--;
       }
-        
-      if(right >= left){
-        //up
-        for(int i = bottom; i >= top; i--){
+
+      if (right >= left) {
+        // up
+        for (int i = bottom; i >= top; i--) {
           ans.add(arr[i][left]);
         }
         left++;
       }
-        
+
     }
 
     return ans;
   }
-  
+
 }
