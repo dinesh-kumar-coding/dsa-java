@@ -17,4 +17,29 @@ public class CheckSorted {
     }
     return true;
   }
+
+  public static boolean check_leetcode1752(int[] nums){
+    for(int i = 1; i < nums.length; i++){
+      if(nums[i - 1] > nums[i]){
+        reverseArray(nums, 0, i - 1);
+        reverseArray(nums, i, nums.length - 1);
+        reverseArray(nums, 0, nums.length - 1);
+        for(int j = 1; j < nums.length; j++){
+          if(nums[j - 1] > nums[j]) return false;
+        }
+      }
+    }
+    return true;
+  }
+
+  public static void reverseArray(int[] nums, int low, int high){
+    while(high > low){
+      int temp = nums[low];
+      nums[low] = nums[high];
+      nums[high] = temp;
+      high--;
+      low++;
+    }
+  }
+  
 }
