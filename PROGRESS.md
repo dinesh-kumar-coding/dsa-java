@@ -48,6 +48,7 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Set matrix zeroes | step03-arrays/medium/SetMatrixZeroes.java | brute (marker) · better (row/col arrays) · optimal (in-place markers) | ✅ all 3 (he fixed optimal — swapped flags + `j<m`; brute assumes 0/1 inputs) | |
 | Rotate matrix by 90° | step03-arrays/medium/RotateMatrix.java | brute (index map) · optimal (transpose + reverse rows) | ✅ both (he fixed brute himself: added write-back + CW direction) | |
 | Count subarrays with sum K | step03-arrays/medium/SubArraysSumK.java | brute O(N²) · optimal prefix+HashMap O(N) · sliding window (positive only) | ✅ all 3 verified | |
+| Spiral matrix | step03-arrays/medium/SpiralMatrix.java | 4-boundary traversal (left/right/top/bottom) | ✅ verified | |
 
 ## LeetCode extras
 | Problem | File | Approaches | Status | Revisit |
