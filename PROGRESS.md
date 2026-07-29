@@ -47,6 +47,7 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Longest consecutive sequence | step03-arrays/medium/LongestConsecutiveSequence.java | brute (linear search) · better (sort) · optimal (HashSet) | ✅ (brute bug fixed — added maxCount tracking) | |
 | Set matrix zeroes | step03-arrays/medium/SetMatrixZeroes.java | brute (marker) · better (row/col arrays) · optimal (in-place markers) | ✅ all 3 (he fixed optimal — swapped flags + `j<m`; brute assumes 0/1 inputs) | |
 | Rotate matrix by 90° | step03-arrays/medium/RotateMatrix.java | brute (index map) · optimal (transpose + reverse rows) | ✅ both (he fixed brute himself: added write-back + CW direction) | |
+| Count subarrays with sum K | step03-arrays/medium/SubArraysSumK.java | brute O(N²) · optimal prefix+HashMap O(N) · sliding window (positive only) | ✅ all 3 verified | |
 
 ## LeetCode extras
 | Problem | File | Approaches | Status | Revisit |
