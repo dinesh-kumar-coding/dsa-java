@@ -63,3 +63,4 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | GCD sum (daily, Jul 16) | leetcode/GcdSum_20260716.java | prefix max + prefix gcd | ✅ | |
 | Find GCD of min & max (daily, Jul 18) | leetcode/FindGcd_20260718.java | min/max scan + Euclid | ✅ | |
 | Max product of two elements (daily, Jul 27) | leetcode/MaxProduct_20260727.java | single pass — track top two, `(max-1)*(secondMax-1)` | ✅ | |
+| Min pushes to type word I (daily, Jul 30) | leetcode/MinNumOfPushesToTypeWord20260730.java | greedy length-brackets (1/2/3/4 pushes) | ✅ | |
