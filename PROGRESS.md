@@ -50,6 +50,11 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Count subarrays with sum K | step03-arrays/medium/SubArraysSumK.java | brute O(N²) · optimal prefix+HashMap O(N) · sliding window (positive only) | ✅ all 3 verified | |
 | Spiral matrix | step03-arrays/medium/SpiralMatrix.java | 4-boundary traversal (left/right/top/bottom) | ✅ verified | |
 
+## Step 4 — Binary Search ← current
+| Problem | File | Approaches | Status | Revisit |
+|---|---|---|---|---|
+| Binary search fundamentals | step04-binary-search/BinarySearch.java | iterative + recursive · lower bound · upper bound | ✅ all 4 written cold, verified — zero bugs | |
+
 ## LeetCode extras
 | Problem | File | Approaches | Status | Revisit |
 |---|---|---|---|---|
