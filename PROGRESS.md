@@ -54,9 +54,10 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Problem | File | Approaches | Status | Revisit |
 |---|---|---|---|---|
 | Binary search fundamentals | step04-binary-search/BinarySearch.java | iterative + recursive · lower bound · upper bound | ✅ all 4 written cold, verified — zero bugs | |
+| Search insert · floor · ceil | step04-binary-search/SearchInsertFloorCeil.java | lower/upper-bound cousins | ✅ all 3 written cold, verified — zero bugs | |
 
 ## LeetCode extras
-| Problem | File | Approaches | Status | Revisit |
+| Problem | File | Approaches | Status | Revisit |~
 |---|---|---|---|---|
 | GCD sum (daily, Jul 16) | leetcode/GcdSum_20260716.java | prefix max + prefix gcd | ✅ | |
 | Find GCD of min & max (daily, Jul 18) | leetcode/FindGcd_20260718.java | min/max scan + Euclid | ✅ | |
