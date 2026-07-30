@@ -55,6 +55,7 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 |---|---|---|---|---|
 | Binary search fundamentals | step04-binary-search/BinarySearch.java | iterative + recursive · lower bound · upper bound | ✅ all 4 written cold, verified — zero bugs | |
 | Search insert · floor · ceil | step04-binary-search/SearchInsertFloorCeil.java | lower/upper-bound cousins | ✅ all 3 written cold, verified — zero bugs | |
+| First & last occurrence · count | step04-binary-search/FirstLastCountOccurrence.java | first/last via bounds; count = last−first+1 | ✅ all 3 verified (count could reuse first/last — DRY) | |
 
 ## LeetCode extras
 | Problem | File | Approaches | Status | Revisit |~
