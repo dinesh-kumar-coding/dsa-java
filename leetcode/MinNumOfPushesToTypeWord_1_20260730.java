@@ -5,7 +5,7 @@
  *         Letters are distinct, so the total depends only on word length (bracketed). TC O(1), SC O(1).
  * Revisit: [date when re-solved from scratch]
  */
-public class MinNumOfPushesToTypeWord20260730 {
+public class MinNumOfPushesToTypeWord_1_20260730 {
 
   public static void main(String[] args){
     System.out.println("abcde (5):  " + minimumPushes("abcde"));                       // expected 5
