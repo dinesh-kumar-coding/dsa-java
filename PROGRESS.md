@@ -50,6 +50,7 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Count subarrays with sum K | step03-arrays/medium/SubArraysSumK.java | brute O(N²) · optimal prefix+HashMap O(N) · sliding window (positive only) | ✅ all 3 verified | |
 | Spiral matrix | step03-arrays/medium/SpiralMatrix.java | 4-boundary traversal (left/right/top/bottom) | ✅ verified | |
 | Pascal Triangle | step03-arrays/hard/PascalTriangle.java | brute individual nCr O(N³) · optimal math recurrence O(N²) | ✅ verified | |
+| Single Element in Sorted Array | step03-arrays/medium/SingleElementInSortedArr.java | brute XOR O(N) · optimal binary search O(log N) | ✅ verified | |
 
 ## Step 4 — Binary Search ← current
 | Problem | File | Approaches | Status | Revisit |
@@ -65,4 +66,4 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Find GCD of min & max (daily, Jul 18) | leetcode/FindGcd_20260718.java | min/max scan + Euclid | ✅ | |
 | Max product of two elements (daily, Jul 27) | leetcode/MaxProduct_20260727.java | single pass — track top two, `(max-1)*(secondMax-1)` | ✅ | |
 | Min pushes to type word I (daily, Jul 30) | leetcode/MinNumOfPushesToTypeWord_1_20260730.java | greedy length-brackets (1/2/3/4 pushes) | ✅ | |
-| Min pushes to type word II (daily, Jul 30) | leetcode/MinNumOfPushesToTypeWord_2_20260730.java | freq count + sort desc → bucket into 1/2/3/4-push tiers | ✅ | |
+| Min pushes to type word II (daily, Jul 31) | leetcode/MinNumOfPushesToTypeWord_2_20260730.java | freq count + sort desc → bucket into 1/2/3/4-push tiers | ✅ | |
