@@ -50,7 +50,8 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Count subarrays with sum K | step03-arrays/medium/SubArraysSumK.java | brute O(N²) · optimal prefix+HashMap O(N) · sliding window (positive only) | ✅ all 3 verified | |
 | Spiral matrix | step03-arrays/medium/SpiralMatrix.java | 4-boundary traversal (left/right/top/bottom) | ✅ verified | |
 | Pascal Triangle | step03-arrays/hard/PascalTriangle.java | brute individual nCr O(N³) · optimal math recurrence O(N²) | ✅ verified | |
-| Single Element in Sorted Array | step03-arrays/medium/SingleElementInSortedArr.java | brute XOR O(N) · optimal binary search O(log N) | ✅ verified | |
+| Single Element in Sorted Array | step03-arrays/hard/SingleElementInSortedArr.java | brute XOR O(N) · optimal binary search O(log N) | ✅ verified | |
+| Majority Element II | step03-arrays/hard/MajorityElement_2.java | brute HashMap O(N) SC:O(N) · optimal Boyer-Moore Voting O(N) SC:O(1) | ✅ verified | |
 
 ## Step 4 — Binary Search ← current
 | Problem | File | Approaches | Status | Revisit |
