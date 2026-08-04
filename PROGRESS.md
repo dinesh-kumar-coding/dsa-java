@@ -44,21 +44,21 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Rearrange by sign | step03-arrays/medium/RearrangeBySign.java | brute + optimal O(N) | ✅ | |
 | Next permutation | step03-arrays/medium/NextPermutation.java | 3-step: break point, swap, reverse suffix | ✅ | |
 | Leaders in array | step03-arrays/medium/LeadersInArray.java | right-to-left running max | ✅ | |
-| Longest consecutive sequence | step03-arrays/medium/LongestConsecutiveSequence.java | brute (linear search) · better (sort) · optimal (HashSet) | ✅ (brute bug fixed — added maxCount tracking) | |
-| Set matrix zeroes | step03-arrays/medium/SetMatrixZeroes.java | brute (marker) · better (row/col arrays) · optimal (in-place markers) | ✅ all 3 (he fixed optimal — swapped flags + `j<m`; brute assumes 0/1 inputs) | |
-| Rotate matrix by 90° | step03-arrays/medium/RotateMatrix.java | brute (index map) · optimal (transpose + reverse rows) | ✅ both (he fixed brute himself: added write-back + CW direction) | |
-| Count subarrays with sum K | step03-arrays/medium/SubArraysSumK.java | brute O(N²) · optimal prefix+HashMap O(N) · sliding window (positive only) | ✅ all 3 verified | |
-| Spiral matrix | step03-arrays/medium/SpiralMatrix.java | 4-boundary traversal (left/right/top/bottom) | ✅ verified | |
-| Pascal Triangle | step03-arrays/hard/PascalTriangle.java | brute individual nCr O(N³) · optimal math recurrence O(N²) | ✅ verified | |
-| Single Element in Sorted Array | step03-arrays/hard/SingleElementInSortedArr.java | brute XOR O(N) · optimal binary search O(log N) | ✅ verified | |
-| Majority Element II | step03-arrays/hard/MajorityElement_2.java | brute HashMap O(N) SC:O(N) · optimal Boyer-Moore Voting O(N) SC:O(1) | ✅ verified | |
+| Longest consecutive sequence | step03-arrays/medium/LongestConsecutiveSequence.java | brute (linear search) · better (sort) · optimal (HashSet) | ✅ | |
+| Set matrix zeroes | step03-arrays/medium/SetMatrixZeroes.java | brute (marker) · better (row/col arrays) · optimal (in-place markers) | ✅ | |
+| Rotate matrix by 90° | step03-arrays/medium/RotateMatrix.java | brute (index map) · optimal (transpose + reverse rows) | ✅ | |
+| Count subarrays with sum K | step03-arrays/medium/SubArraysSumK.java | brute O(N²) · optimal prefix+HashMap O(N) · sliding window (positive only) | ✅ | |
+| Spiral matrix | step03-arrays/medium/SpiralMatrix.java | 4-boundary traversal (left/right/top/bottom) | ✅ | |
+| Pascal Triangle | step03-arrays/hard/PascalTriangle.java | brute individual nCr O(N³) · optimal math recurrence O(N²) | ✅ | |
+| Single Element in Sorted Array | step03-arrays/hard/SingleElementInSortedArr.java | brute XOR O(N) · optimal binary search O(log N) | ✅ | |
+| Majority Element II | step03-arrays/hard/MajorityElement_2.java | brute HashMap O(N) SC:O(N) · optimal Boyer-Moore Voting O(N) SC:O(1) | ✅ | |
 
 ## Step 4 — Binary Search ← current
 | Problem | File | Approaches | Status | Revisit |
 |---|---|---|---|---|
-| Binary search fundamentals | step04-binary-search/BinarySearch.java | iterative + recursive · lower bound · upper bound | ✅ all 4 written cold, verified — zero bugs | |
-| Search insert · floor · ceil | step04-binary-search/SearchInsertFloorCeil.java | lower/upper-bound cousins | ✅ all 3 written cold, verified — zero bugs | |
-| First & last occurrence · count | step04-binary-search/FirstLastCountOccurrence.java | first/last via bounds; count = last−first+1 | ✅ all 3 verified (count could reuse first/last — DRY) | |
+| Binary search fundamentals | step04-binary-search/BinarySearch.java | iterative + recursive · lower bound · upper bound | ✅ | |
+| Search insert · floor · ceil | step04-binary-search/SearchInsertFloorCeil.java | lower/upper-bound cousins | ✅ | |
+| First & last occurrence · count | step04-binary-search/FirstLastCountOccurrence.java | first/last via bounds; count = last−first+1 | ✅ | |
 
 ## LeetCode extras
 | Problem | File | Approaches | Status | Revisit |~
