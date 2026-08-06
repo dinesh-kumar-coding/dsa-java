@@ -52,6 +52,8 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Pascal Triangle | step03-arrays/hard/PascalTriangle.java | brute individual nCr O(N³) · optimal math recurrence O(N²) | ✅ | |
 | Single Element in Sorted Array | step03-arrays/hard/SingleElementInSortedArr.java | brute XOR O(N) · optimal binary search O(log N) | ✅ | |
 | Majority Element II | step03-arrays/hard/MajorityElement_2.java | brute HashMap O(N) SC:O(N) · optimal Boyer-Moore Voting O(N) SC:O(1) | ✅ | |
+| Three Sum | step03-arrays/medium/ThreeSum.java | brute 3-loops O(N³) · better Hashing O(N²) SC:O(N) · optimal Two-Pointers O(N²) SC:O(1) | ✅ verified | |
+| Four Sum | step03-arrays/medium/FourSum.java | brute 4-loops O(N⁴) · better Hashing O(N³) SC:O(N) · optimal Two-Pointers O(N³) SC:O(1) | ✅ verified | |
 
 ## Step 4 — Binary Search ← current
 | Problem | File | Approaches | Status | Revisit |
