@@ -11,19 +11,19 @@ public class FourSum {
     int target1 = 0;
     System.out.println("Test 1 Brute: " + fourSum_brute(test1, target1));
     System.out.println("Test 1 Better: " + fourSum_better(test1, target1));
-    System.out.println("Test 1 Optimal: " + fourSum(test1, target1));
+    System.out.println("Test 1 Optimal: " + fourSum_optimal(test1, target1));
 
     int[] test2 = {2, 2, 2, 2, 2};
     int target2 = 8;
     System.out.println("Test 2 Brute: " + fourSum_brute(test2, target2));
     System.out.println("Test 2 Better: " + fourSum_better(test2, target2));
-    System.out.println("Test 2 Optimal: " + fourSum(test2, target2));
+    System.out.println("Test 2 Optimal: " + fourSum_optimal(test2, target2));
 
     int[] test3 = {-2, -1, -1, 1, 1, 2, 2};
     int target3 = 0;
     System.out.println("Test 3 Brute: " + fourSum_brute(test3, target3));
     System.out.println("Test 3 Better: " + fourSum_better(test3, target3));
-    System.out.println("Test 3 Optimal: " + fourSum(test3, target3));
+    System.out.println("Test 3 Optimal: " + fourSum_optimal(test3, target3));
   }
 
   public static List<List<Integer>> fourSum_brute(int[] arr, int target){
@@ -65,7 +65,7 @@ public class FourSum {
     return new ArrayList<>(result);
   }
 
-  public static List<List<Integer>> fourSum(int[] arr, int target){
+  public static List<List<Integer>> fourSum_optimal(int[] arr, int target){
     Arrays.sort(arr);
     int n = arr.length;
     List<List<Integer>> result = new ArrayList<>();
