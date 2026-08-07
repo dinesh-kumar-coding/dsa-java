@@ -65,7 +65,7 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Search in Rotated Sorted Array I & II | step03-arrays/medium/SearchElementInRotArr.java | optimal binary search (shrink bounds for duplicates) O(log N) Avg, O(N) Worst | ✅  | |
 | Number of Times Sorted Array is Rotated | step03-arrays/medium/TimesSortArrRot.java | optimal binary search (index of min) O(log N) Avg, O(N) Worst | ✅ verified | |
 ## LeetCode extras
-| Problem | File | Approaches | Status | Revisit |~
+| Problem | File | Approaches | Status | Revisit |
 |---|---|---|---|---|
 | GCD sum (daily, Jul 16) | leetcode/GcdSum_20260716.java | prefix max + prefix gcd | ✅ | |
 | Find GCD of min & max (daily, Jul 18) | leetcode/FindGcd_20260718.java | min/max scan + Euclid | ✅ | |
