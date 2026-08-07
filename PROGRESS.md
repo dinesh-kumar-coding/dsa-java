@@ -63,6 +63,7 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | First & last occurrence · count | step04-binary-search/FirstLastCountOccurrence.java | first/last via bounds; count = last−first+1 | ✅ | |
 | Find Minimum in Rotated Sorted Array I & II | step03-arrays/medium/MinInRotArr.java | optimal binary search (shrink bounds for duplicates) O(log N) Avg, O(N) Worst | ✅  | |
 | Search in Rotated Sorted Array I & II | step03-arrays/medium/SearchElementInRotArr.java | optimal binary search (shrink bounds for duplicates) O(log N) Avg, O(N) Worst | ✅  | |
+| Number of Times Sorted Array is Rotated | step03-arrays/medium/TimesSortArrRot.java | optimal binary search (index of min) O(log N) Avg, O(N) Worst | ✅ verified | |
 ## LeetCode extras
 | Problem | File | Approaches | Status | Revisit |~
 |---|---|---|---|---|
