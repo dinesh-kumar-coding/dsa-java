@@ -61,7 +61,7 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Binary search fundamentals | step04-binary-search/BinarySearch.java | iterative + recursive · lower bound · upper bound | ✅ | |
 | Search insert · floor · ceil | step04-binary-search/SearchInsertFloorCeil.java | lower/upper-bound cousins | ✅ | |
 | First & last occurrence · count | step04-binary-search/FirstLastCountOccurrence.java | first/last via bounds; count = last−first+1 | ✅ | |
-
+| Find Minimum in Rotated Sorted Array | step03-arrays/medium/MinInRotArr.java | optimal binary search O(log N) SC:O(1) | ✅ verified | |
 ## LeetCode extras
 | Problem | File | Approaches | Status | Revisit |~
 |---|---|---|---|---|
