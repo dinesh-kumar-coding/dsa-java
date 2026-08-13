@@ -21,59 +21,68 @@ public class BinarySearch {
     System.out.println("upperBound(8):       " + upperBound(arr, 8));
   }
 
-  // Return an index i such that arr[i] == target, else -1.
+  // Function to perform Binary Search on sorted array
   public static int binarySearch_iterative(int[] arr, int target) {
     int low = 0;
     int high = arr.length - 1;
+
+    // Keep searching until low crosses high
     while(high >= low){
-      int mid = low + (high - low)/2;
-      if(arr[mid] == target) return mid;
-      else if(arr[mid] < target) low = mid + 1;
-      else high = mid - 1;
+      int mid = low + (high - low)/2; // Find the middle index
+      if(arr[mid] == target) return mid; // Target found
+      else if(arr[mid] < target) low = mid + 1; // Search to right half
+      else high = mid - 1; // Search to left half
     }
-    return -1;
+    return -1; // Target not found
   }
 
-  // Same thing, recursively. Return index of target within arr[low..high], else -1.
+  // Recursive Binary Search function
   public static int binarySearch_recursive(int[] arr, int target, int low, int high) {
-    if(high < low) return -1;
+    if(high < low) return -1; // Base case: target not found
+    // Find middle index
     int mid = low + (high - low)/2;
+
+    // If target is found at mid
     if(arr[mid] == target) return mid;
+
+    // If target is greater, search right half
     else if(arr[mid] < target) return binarySearch_recursive(arr, target, mid + 1, high);
+
+    // Otherwise, search left half
     else return binarySearch_recursive(arr, target, low, mid - 1);
   }
 
-  // First index i where arr[i] >= target   (returns arr.length if none). Classic "lower bound".
+  // Function to find the lower bound index using binary search
   public static int lowerBound(int[] arr, int target) {
-    int low = 0;
-    int high = arr.length - 1;
-    int resultIndex = arr.length;
+    int low = 0; // Start index
+    int high = arr.length - 1; // End index
+    int resultIndex = arr.length; // Default value if not found
     while(high >= low){
-      int mid = low + (high - low)/2;
+      int mid = low + (high - low)/2; // Find mid index
       if(arr[mid] >= target){
-        resultIndex = mid;
-        high = mid - 1;
+        resultIndex = mid; // Store possible answer
+        high = mid - 1; // Move left
       } else {
-        low = mid + 1;
+        low = mid + 1; // Move right
       }
     }
-    return resultIndex;
+    return resultIndex; // Return the lower bound index
   }
 
-  // First index i where arr[i] >  target    (returns arr.length if none). Classic "upper bound".
+  // Binary search to find upper bound
   public static int upperBound(int[] arr, int target) {
     int low = 0;
     int high = arr.length - 1;
-    int resultIndex = arr.length;
+    int resultIndex = arr.length; // Default to length if not found
     while(high >= low){
       int mid = low + (high - low)/2;
       if(arr[mid] > target){
-        resultIndex = mid;
-        high = mid - 1;
+        resultIndex = mid; // Store current index as potential answer
+        high = mid - 1; // Move left
       } else{
-        low = mid + 1;
+        low = mid + 1; // Move right
       }
     }
-    return resultIndex;
+    return resultIndex; // Return final answer
   }
 }

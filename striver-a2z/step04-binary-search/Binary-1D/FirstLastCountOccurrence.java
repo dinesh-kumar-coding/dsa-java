@@ -16,41 +16,55 @@ public class FirstLastCountOccurrence {
     System.out.println("count(7): " + countOccurrences(arr, 7));
   }
 
-  // First index of target, or -1 if not present.
+  // find first index of target using binary search
   public static int firstOccurrence(int[] arr, int target) {
     int low = 0;
     int high = arr.length - 1;
     int firstIndex = -1;
     while(high >= low){
       int mid = low + (high - low)/2;
+      // when match found, store index and move left
       if(arr[mid] == target){
         firstIndex = mid;
+        // Look for smaller index on the left
         high = mid - 1;
-      } else if(arr[mid] > target){
+      }
+      // when target is smaller, move left 
+      else if(arr[mid] > target){
         high = mid - 1;
-      } else low = mid + 1;
+      }
+      // otherwise move right
+      else low = mid + 1;
     }
+    // return first occurence or -1
     return firstIndex;
   }
 
-  // Last index of target, or -1 if not present.
+  // find last index of target using binary search
   public static int lastOccurrence(int[] arr, int target) {
     int low = 0;
     int high = arr.length - 1;
     int lastIndex = -1;
     while(high >= low){
       int mid = low + (high - low)/2;
+      // when match found, store index and move right
       if(arr[mid] == target){
         lastIndex = mid;
+        // Look for larger index on the right
         low = mid + 1;
-      } else if(arr[mid] > target){
+      }
+      // when target is smaller, move left 
+      else if(arr[mid] > target){
         high = mid - 1;
-      } else low = mid + 1;
+      }
+      // otherwise move right 
+      else low = mid + 1;
     }
+    // return last occurance or -1
     return lastIndex;
   }
 
-  // How many times target appears. (Hint: build it from first & last.)
+  //find occurences of the target in sorted array using binary search
   public static int countOccurrences(int[] arr, int target) {
     int f = firstOccurrence(arr, target);
     if(f == -1) return 0;

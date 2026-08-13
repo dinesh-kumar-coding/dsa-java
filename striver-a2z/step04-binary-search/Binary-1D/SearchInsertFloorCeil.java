@@ -1,7 +1,6 @@
 /*
  * Topic: Binary Search — Search Insert Position · Floor · Ceil (Striver A2Z Step 4)
  * Written: 2026-07-30
- * All three are lower/upper-bound cousins — build them on the bounds you just wrote.
  * Revisit: [date when re-solved from scratch]
  */
 public class SearchInsertFloorCeil {
@@ -19,25 +18,24 @@ public class SearchInsertFloorCeil {
     System.out.println("ceil(20):        " + ceil(arr, 20));
   }
 
-  // Index where target is, or where it would be inserted to keep sorted order.
-  // (Hint: this is exactly lower bound — first i with arr[i] >= target.)
+  // Function to find the insert position of target in sorted array
   public static int searchInsertPosition(int[] arr, int target) {
     int low = 0;
     int high = arr.length - 1;
-    int resultIndex = arr.length;
+    int resultIndex = arr.length; // Default to end if target is greater than all elements 
     while(high >= low){
       int mid = low + (high - low)/2;
       if(arr[mid] >= target){
-        resultIndex = mid;
+        resultIndex = mid; // Potential answer found, try to go left
         high = mid - 1;
       } else{
-        low = mid + 1;
+        low = mid + 1; // Go right
       }
     }
     return resultIndex;
   }
 
-  // Largest VALUE in arr that is <= target, or -1 if none exists.
+  // Function to find floor
   public static int floor(int[] arr, int target) {
     int low = 0;
     int high = arr.length - 1;
@@ -45,7 +43,7 @@ public class SearchInsertFloorCeil {
     while(high >= low){
       int mid = low + (high - low)/2;
       if(arr[mid] <= target){
-        resultIndex = arr[mid];
+        resultIndex = arr[mid];  // Potential floor
         low = mid + 1;
       } else{
         high = mid - 1;
@@ -54,7 +52,7 @@ public class SearchInsertFloorCeil {
     return resultIndex;
   }
 
-  // Smallest VALUE in arr that is >= target, or -1 if none exists.
+  // Function to find ceiling
   public static int ceil(int[] arr, int target) {
     int low = 0;
     int high = arr.length - 1;
@@ -62,7 +60,7 @@ public class SearchInsertFloorCeil {
     while(high >= low){
       int mid = low + (high - low)/2;
       if(arr[mid] >= target){
-        resultIndex = arr[mid];
+        resultIndex = arr[mid];  // Potential ceil
         high = mid - 1;
       } else{
         low = mid + 1;

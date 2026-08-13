@@ -35,49 +35,69 @@ public class SearchElementInRotArr {
     System.out.println("Test 7 (Dupes): " + searchEleInRotatedArray_withDuplicates(test7, target7));
   }
 
+  // Function to search target in rotated sorted array using binary search
   public static int searchEleInRotatedArray(int[] arr, int target){
     int low = 0;
     int high = arr.length - 1;
     while(high >= low){
       int mid = low + (high - low)/2;
       
+      // If target found, return index
       if(arr[mid] == target) return mid;
 
+      // If left part is sorted
       if(arr[low] <= arr[mid]){
+        // If target lies within sorted left part
         if(arr[low] <= target && arr[mid] >= target){
           high = mid - 1;
-        } else low = mid + 1;
-      } else{
+        }
+        // Else, search in right part 
+        else low = mid + 1;
+      } 
+      // Else, right part is sorted
+      else{
+        // If target lies within sorted right part
         if(arr[mid] <= target && target <= arr[high]){
           low = mid + 1;
-        } else high = mid - 1;
+        }
+        // Else, search in left part 
+        else high = mid - 1;
       }
     }
+    // Target not found
     return -1;
   }
 
+  // Function to find the existing of target in rotated sorted array using binary search
   public static boolean searchEleInRotatedArray_withDuplicates(int[] arr, int target){
     int low = 0;
     int high = arr.length - 1;
     while(high >= low){
       int mid = low + (high - low)/2;
       
+      // If target found, return true
       if(arr[mid] == target) return true;
+
+      // Handle duplicates: cannot determine sorted side
       if(arr[low] == arr[mid] && arr[mid] == arr[high]){
         high--;
         low++;
         continue; 
       }
+
+      // left half is sorted
       if(arr[low] <= arr[mid]){
         if(arr[low] <= target && arr[mid] >= target){
-          high = mid - 1;
-        } else low = mid + 1;
-      } else{
+          high = mid - 1; // Search left
+        } else low = mid + 1; // Search right
+      }
+      // right half is sorted 
+      else{
         if(arr[mid] <= target && target <= arr[high]){
-          low = mid + 1;
-        } else high = mid - 1;
+          low = mid + 1; // Search right
+        } else high = mid - 1; // Search left
       }
     }
-    return false;
+    return false; // Not found
   }
 }
