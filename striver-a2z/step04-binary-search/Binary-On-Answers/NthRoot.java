@@ -1,19 +1,19 @@
 /*
- * Problem: SquareRoot (N-th Root) — Optimal: Binary Search
+ * Problem: NthRoot (N-th Root) — Optimal: Binary Search
  * Solved: 15-08-2026 | TC: O(N * log(M)) where M is num | SC: O(1)
  * Revisit: [date]
  */
 public class NthRoot {
   public static void main(String[] args) {
-    System.out.println("Test 1 (Cube root of 27): " + squareRoot(27, 3)); 
-    System.out.println("Test 2 (Square root of 16): " + squareRoot(16, 2)); 
-    System.out.println("Test 3 (5th root of 32): " + squareRoot(32, 5)); 
-    System.out.println("Test 4 (Cube root of 28): " + squareRoot(28, 3)); 
-    System.out.println("Test 5 (Square root of 9): " + squareRoot(9, 2)); 
+    System.out.println("Test 1 (Cube root of 27): " + Nth_Root(27, 3)); 
+    System.out.println("Test 2 (Nth root of 16): " + Nth_Root(16, 2)); 
+    System.out.println("Test 3 (5th root of 32): " + Nth_Root(32, 5)); 
+    System.out.println("Test 4 (Cube root of 28): " + Nth_Root(28, 3)); 
+    System.out.println("Test 5 (Nth root of 9): " + Nth_Root(9, 2)); 
   }
 
   // Functoin to find N-th root of num using binary search
-  public static int squareRoot(int num, int n){
+  public static int Nth_Root(int num, int n){
     int low = 1;
     int high = num;
     while(high >= low){
