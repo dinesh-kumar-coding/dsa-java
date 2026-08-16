@@ -3,7 +3,7 @@
  * Solved: 15-08-2026 | TC: O(N * log(M)) where M is num | SC: O(1)
  * Revisit: [date]
  */
-public class SquareRoot {
+public class NthRoot {
   public static void main(String[] args) {
     System.out.println("Test 1 (Cube root of 27): " + squareRoot(27, 3)); 
     System.out.println("Test 2 (Square root of 16): " + squareRoot(16, 2)); 
