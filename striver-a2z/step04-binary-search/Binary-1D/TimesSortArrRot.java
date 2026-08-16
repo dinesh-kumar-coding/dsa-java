@@ -31,20 +31,17 @@ public class TimesSortArrRot {
   public static int timesSortedArrayIsRotated(int[] arr){
     int low = 0;
     int high = arr.length - 1;
-    int result = -1;
     while(high >= low){
       int mid = low + (high - low)/2;
       if(low == high){
-        result = low;
         break;
       }
       if(arr[low] == arr[mid] && arr[mid] == arr[high]){
         high--;
-        low++;
       } else if(arr[mid] > arr[high]){
         low = mid + 1;
       } else high = mid;
     }
-    return result;
+    return low;
   }
 }
