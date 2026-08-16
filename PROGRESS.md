@@ -17,7 +17,7 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Bubble sort | step02-sorting/BubbleSort.java | iterative + recursive, early exit | ✅ | |
 | Insertion sort | step02-sorting/InsertionSort.java | iterative + recursive | ✅ | |
 | Merge sort | step02-sorting/MergeSort.java | O(N log N) | ✅ | |
-| Quick sort | step02-sorting/QuickSort.java | partition (buggy) | ✅ | |
+| Quick sort | step02-sorting/QuickSort.java | partition | ✅ | |
 
 ## Step 3 — Arrays (easy)
 | Problem | File | Approaches | Status | Revisit |
@@ -33,11 +33,11 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Single number | step03-arrays/easy/SingleNumber.java | XOR | ✅ | |
 | Longest subarray sum K | step03-arrays/easy/LongestSubarraySumK.java | brute + prefix-hash + two pointers | ✅ | |
 
-## Step 3 — Arrays (medium) ← current
+## Step 3 — Arrays (medium)
 | Problem | File | Approaches | Status | Revisit |
 |---|---|---|---|---|
 | Two sum | step03-arrays/medium/TwoSum.java | HashMap + two pointers | ✅ | |
-| Sort colors (0/1/2) | step03-arrays/medium/SortColors.java | Dutch national flag | ✅ |
+| Sort colors (0/1/2) | step03-arrays/medium/SortColors.java | Dutch national flag | ✅ | |
 | Majority element | step03-arrays/medium/MajorityElement.java | HashMap + Boyer-Moore | ✅ | |
 | Maximum subarray sum (Kadane's) | step03-arrays/medium/MaximumSubarraySum.java | Kadane + print-subarray variant | ✅ | |
 | Best time to buy & sell stock | step03-arrays/medium/StockBuySell.java | min-so-far single pass | ✅ | |
@@ -49,21 +49,42 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Rotate matrix by 90° | step03-arrays/medium/RotateMatrix.java | brute (index map) · optimal (transpose + reverse rows) | ✅ | |
 | Count subarrays with sum K | step03-arrays/medium/SubArraysSumK.java | brute O(N²) · optimal prefix+HashMap O(N) · sliding window (positive only) | ✅ | |
 | Spiral matrix | step03-arrays/medium/SpiralMatrix.java | 4-boundary traversal (left/right/top/bottom) | ✅ | |
-| Pascal Triangle | step03-arrays/hard/PascalTriangle.java | brute individual nCr O(N³) · optimal math recurrence O(N²) | ✅ | |
-| Single Element in Sorted Array | step03-arrays/hard/SingleElementInSortedArr.java | brute XOR O(N) · optimal binary search O(log N) | ✅ | |
-| Majority Element II | step03-arrays/hard/MajorityElement_2.java | brute HashMap O(N) SC:O(N) · optimal Boyer-Moore Voting O(N) SC:O(1) | ✅ | |
-| Three Sum | step03-arrays/medium/ThreeSum.java | brute 3-loops O(N³) · better Hashing O(N²) SC:O(N) · optimal Two-Pointers O(N²) SC:O(1) | ✅ verified | |
-| Four Sum | step03-arrays/medium/FourSum.java | brute 4-loops O(N⁴) · better Hashing O(N³) SC:O(N) · optimal Two-Pointers O(N³) SC:O(1) | ✅ verified | |
 
-## Step 4 — Binary Search ← current
+## Step 3 — Arrays (hard)
 | Problem | File | Approaches | Status | Revisit |
 |---|---|---|---|---|
-| Binary search fundamentals | step04-binary-search/BinarySearch.java | iterative + recursive · lower bound · upper bound | ✅ | |
-| Search insert · floor · ceil | step04-binary-search/SearchInsertFloorCeil.java | lower/upper-bound cousins | ✅ | |
-| First & last occurrence · count | step04-binary-search/FirstLastCountOccurrence.java | first/last via bounds; count = last−first+1 | ✅ | |
-| Find Minimum in Rotated Sorted Array I & II | step03-arrays/medium/MinInRotArr.java | optimal binary search (shrink bounds for duplicates) O(log N) Avg, O(N) Worst | ✅  | |
-| Search in Rotated Sorted Array I & II | step03-arrays/medium/SearchElementInRotArr.java | optimal binary search (shrink bounds for duplicates) O(log N) Avg, O(N) Worst | ✅  | |
-| Number of Times Sorted Array is Rotated | step03-arrays/medium/TimesSortArrRot.java | optimal binary search (index of min) O(log N) Avg, O(N) Worst | ✅ verified | |
+| Pascal's Triangle | step03-arrays/hard/PascalTriangle.java | brute individual nCr O(N³) · optimal math recurrence O(N²) | ✅ | |
+| Majority Element II (>n/3) | step03-arrays/hard/MajorityElement_2.java | brute HashMap O(N)/O(N) · optimal extended Boyer-Moore O(N)/O(1) | ✅ | |
+| 3-Sum | step03-arrays/hard/ThreeSum.java | brute 3-loops O(N³) · better hashing O(N²)/O(N) · optimal sort + two-pointers O(N²)/O(1) | ✅ | |
+| 4-Sum | step03-arrays/hard/FourSum.java | brute 4-loops O(N⁴) · better hashing O(N³)/O(N) · optimal two-pointers O(N³)/O(1) | ✅ | |
+| Longest subarray with sum 0 | step03-arrays/hard/LongestSubArrayWithSumZero.java | optimal prefix-sum + HashMap O(N)/O(N) | ✅ | |
+| Count subarrays with XOR = K | step03-arrays/hard/SubArrayWithXOR_K.java | optimal prefix-XOR + HashMap O(N)/O(N) | ✅ | |
+
+## Step 4 — Binary Search ← current
+
+### Binary search on 1D arrays (Binary-1D/)
+| Problem | File | Approaches | Status | Revisit |
+|---|---|---|---|---|
+| Binary search fundamentals | step04-binary-search/Binary-1D/BinarySearch.java | iterative + recursive · lower bound · upper bound | ✅ | |
+| Search insert · floor · ceil | step04-binary-search/Binary-1D/SearchInsertFloorCeil.java | lower/upper-bound cousins | ✅ | |
+| First & last occurrence · count | step04-binary-search/Binary-1D/FirstLastCountOccurrence.java | first/last via bounds; count = last−first+1 | ✅ | |
+| Single element in sorted array | step04-binary-search/Binary-1D/SingleElementInSortedArr.java | brute XOR O(N) · optimal binary search O(log N) | ✅ | |
+| Search in rotated sorted array I & II | step04-binary-search/Binary-1D/SearchElementInRotArr.java | binary search (shrink bounds on duplicates) O(log N) avg / O(N) worst | ✅ | |
+| Minimum in rotated sorted array I & II | step04-binary-search/Binary-1D/MinInRotArr.java | binary search on the sorted half O(log N) avg / O(N) worst | ✅ | |
+| Number of times array is rotated | step04-binary-search/Binary-1D/TimesSortArrRot.java | binary search → index of min O(log N) avg / O(N) worst | ✅ | |
+| Find peak element | step04-binary-search/Binary-1D/PeakElement.java | binary search on the slope O(log N) | ✅ | |
+
+### Binary search on answers (Binary-On-Answers/)
+| Problem | File | Approaches | Status | Revisit |
+|---|---|---|---|---|
+| Square root / Nth root | step04-binary-search/Binary-On-Answers/SquareRoot.java | binary search on the answer space O(N·log M) | ✅ | |
+
+### Binary search on 2D matrices (Binary-2D/)
+| Problem | File | Approaches | Status | Revisit |
+|---|---|---|---|---|
+| Search in a 2D matrix | step04-binary-search/Binary-2D/SearchIn2DMatrix.java | flattened binary search O(log(M·N)) | ✅ | |
+| Row with maximum 1s | step04-binary-search/Binary-2D/RowWithMaximumOnes.java | brute O(M·N) · optimal binary search per row O(M·log N) | ✅ | |
+
 ## LeetCode extras
 | Problem | File | Approaches | Status | Revisit |
 |---|---|---|---|---|
