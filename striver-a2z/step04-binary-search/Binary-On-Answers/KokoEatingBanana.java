@@ -27,16 +27,17 @@ public class KokoEatingBanana {
   public static int minEatingSpeed_brute(int[] arr, int h){
     int maxVal = Arrays.stream(arr).max().getAsInt();
     for(int i = 1; i <= maxVal; i++){
-      int hours = calculateTotalHours(arr, i);
+      int hours = calculateTotalHours(arr, i, h);
       if(hours <= h) return i;
     }
     return maxVal;
   }
 
-  public static int calculateTotalHours(int[] piles, int h){
+  public static int calculateTotalHours(int[] piles, int h, int hours){
     int totalHours = 0;
     for(int pile: piles){
       totalHours += (int)Math.ceil((double)pile/h);
+      if(totalHours > hours) break;
     }
     return totalHours;
   }
@@ -48,7 +49,7 @@ public class KokoEatingBanana {
     int minSpeed = maxVal;
     while(high >= low){
       int mid = low + (high - low)/2;
-      int hours = calculateTotalHours(piles, mid);
+      int hours = calculateTotalHours(piles, mid, h);
       if(hours > h) low = mid + 1;
       else {
         minSpeed = mid;
