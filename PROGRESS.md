@@ -78,9 +78,11 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Problem | File | Approaches | Status | Revisit |
 |---|---|---|---|---|
 | Square root / Nth root | step04-binary-search/Binary-On-Answers/SquareRoot.java | binary search on the answer space O(N·log M) | ✅ | |
+| Koko Eating Bananas | step04-binary-search/KokoEatingBanana.java | brute linear search O(N * maxVal) · optimal binary search on answer O(N log(maxVal)) SC:O(1) | ✅ | |
+| Find the Smallest Divisor Given a Threshold | step04-binary-search/SmallerDivisor.java | optimal binary search on answer O(N log(maxVal)) SC:O(1) | ✅ | |
 
 ### Binary search on 2D matrices (Binary-2D/)
-| Problem | File | Approaches | Status | Revisit |
+| Problem | File| Find the Smallest Divisor Given a Threshold | step04-binary-search/SmallerDivisor.java | optimal binary search on answer O(N log(maxVal)) SC:O(1) | ✅ verified | | | Approaches | Status | Revisit |
 |---|---|---|---|---|
 | Search in a 2D matrix | step04-binary-search/Binary-2D/SearchIn2DMatrix.java | flattened binary search O(log(M·N)) | ✅ | |
 | Row with maximum 1s | step04-binary-search/Binary-2D/RowWithMaximumOnes.java | brute O(M·N) · optimal binary search per row O(M·log N) | ✅ | |
