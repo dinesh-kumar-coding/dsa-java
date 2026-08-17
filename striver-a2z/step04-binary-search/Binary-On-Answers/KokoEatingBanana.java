@@ -21,36 +21,47 @@ public class KokoEatingBanana {
     int[] test3 = {30, 11, 23, 4, 20};
     int h3 = 6;
     System.out.println("Test 3 Brute: " + minEatingSpeed_brute(test3, h3)); // Expected: 23
-    System.out.println("Test 3 Optimal: " + minEatingSpeed_optimal(test3, h3)); 
+    System.out.println("Test 3 Optimal: " + minEatingSpeed_optimal(test3, h3));
+
+    // Mean test: h == piles.length forces the answer to be max(piles)
+    int[] test4 = {1, 1, 1, 999999999};
+    System.out.println("Test 4 Optimal (h = n): " + minEatingSpeed_optimal(test4, 4)); // Expected: 999999999
+
+    // Mean test: the overflow case — speed 1 sums every pile, which exceeds int range
+    int[] test5 = {1000000000, 1000000000, 1000000000};
+    System.out.println("Test 5 Optimal (overflow probe): " + minEatingSpeed_optimal(test5, 3)); // Expected: 1000000000
+    System.out.println("Test 5 total hours at speed 1: " + calculateTotalHours(test5, 1)); // Expected: 3000000000 (needs long)
   }
 
-  public static int minEatingSpeed_brute(int[] arr, int h){
-    int maxVal = Arrays.stream(arr).max().getAsInt();
-    for(int i = 1; i <= maxVal; i++){
-      int hours = calculateTotalHours(arr, i, h);
-      if(hours <= h) return i;
+  public static int minEatingSpeed_brute(int[] piles, int limit){
+    int maxVal = Arrays.stream(piles).max().getAsInt();
+    for(int speed = 1; speed <= maxVal; speed++){
+      long hours = calculateTotalHours(piles, speed);
+      if(hours <= limit) return speed;
     }
     return maxVal;
   }
 
-  public static int calculateTotalHours(int[] piles, int h, int hours){
-    int totalHours = 0;
+  // Hours needed to finish every pile at this speed.
+  // Returns the TRUE total (no early exit) — long, because at speed 1 the
+  // total is the sum of all piles, which overflows int for large inputs.
+  public static long calculateTotalHours(int[] piles, int speed){
+    long totalHours = 0;
     for(int pile: piles){
-      totalHours += (int)Math.ceil((double)pile/h);
-      if(totalHours > hours) break;
+      totalHours += (pile + speed - 1)/speed;   // integer ceiling, no floating point
     }
     return totalHours;
   }
 
-  public static int minEatingSpeed_optimal(int[] piles, int h){
+  public static int minEatingSpeed_optimal(int[] piles, int limit){
     int maxVal = Arrays.stream(piles).max().getAsInt();
     int low = 1;
     int high = maxVal;
     int minSpeed = maxVal;
     while(high >= low){
       int mid = low + (high - low)/2;
-      int hours = calculateTotalHours(piles, mid, h);
-      if(hours > h) low = mid + 1;
+      long hours = calculateTotalHours(piles, mid);
+      if(hours > limit) low = mid + 1;
       else {
         minSpeed = mid;
         high = mid - 1;
