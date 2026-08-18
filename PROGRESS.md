@@ -88,6 +88,11 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Row with maximum 1s | step04-binary-search/Binary-2D/RowWithMaximumOnes.java | brute O(M·N) · optimal binary search per row O(M·log N) | ✅ | |
 | Search in a 2D Matrix II | step04-binary-search/Binary-2D/SearchIn2DMatrixII.java | better BS per row O(M log N) · optimal step-wise search O(M + N) SC:O(1) | ✅ | |
 
+### Graph Learning
+| Problem | File | Approaches | Status | Revisit |
+|---|---|---|---|---|
+| Graph Representation - Adjacency Matrix | step15-graphs/learning/ | Matrix O(V²) SC:O(V²) | ✅ | |
+| Graph Representation - Adjacency List | step15-graphs/learning/ | List O(V+E) SC:O(V+E) | ✅ | |
 
 ## LeetCode extras
 | Problem | File | Approaches | Status | Revisit |
