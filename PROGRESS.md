@@ -103,6 +103,7 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Problem | File | Approaches | Status | Revisit |
 |---|---|---|---|---|
 | Number of Provinces | step15-graphs/learning/NumberOfProvinces.java | optimal DFS on adjacency matrix O(V²) SC:O(V) | ✅ verified | |
+| Find the Number of Islands | step15-graphs/learning/NumberOfIslands.java | optimal BFS (4 & 8 directions variants) O(M * N) SC:O(M * N) | ✅ verified | |
 
 ## LeetCode extras
 | Problem | File | Approaches | Status | Revisit |
