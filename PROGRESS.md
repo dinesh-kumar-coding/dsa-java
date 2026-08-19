@@ -102,7 +102,7 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 ### Problems-On-Traversal
 | Problem | File | Approaches | Status | Revisit |
 |---|---|---|---|---|
-
+| Number of Provinces | step15-graphs/learning/NumberOfProvinces.java | optimal DFS on adjacency matrix O(V²) SC:O(V) | ✅ verified | |
 
 ## LeetCode extras
 | Problem | File | Approaches | Status | Revisit |
