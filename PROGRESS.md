@@ -105,6 +105,7 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Number of Provinces | step15-graphs/learning/NumberOfProvinces.java | optimal DFS on adjacency matrix O(V²) SC:O(V) | ✅ | |
 | Find the Number of Islands | step15-graphs/learning/NumberOfIslands.java | optimal BFS (4 & 8 directions variants) O(M * N) SC:O(M * N) | ✅ | |
 | Rotting Oranges | step15-graphs/learning/RottenOranges.java | optimal multi-source BFS O(M * N) SC:O(M * N) | ✅ | |
+| Flood Fill | step15-graphs/learning/FloodFill.java | optimal BFS O(M * N) SC:O(M * N) | ✅ | |
 
 ## LeetCode extras
 | Problem | File | Approaches | Status | Revisit |
