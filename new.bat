@@ -3,7 +3,7 @@ setlocal
 if "%~1"=="" ( echo usage: new ProblemName [folder] & exit /b 1 )
 set NAME=%~1
 set FOLDER=%~2
-if "%FOLDER%"=="" set FOLDER=striver-a2z\step04-binary-search\Binary-On-Answers\
+if "%FOLDER%"=="" set FOLDER=striver-a2z\step15-graphs\Problems-On-BFS-DFS
 if not exist "%FOLDER%" mkdir "%FOLDER%"
 set FILE=%FOLDER%\%NAME%.java
 if exist "%FILE%" ( echo %FILE% already exists & exit /b 1 )
