@@ -59,6 +59,8 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | 4-Sum | step03-arrays/hard/FourSum.java | brute 4-loops O(N⁴) · better hashing O(N³)/O(N) · optimal two-pointers O(N³)/O(1) | ✅ | |
 | Longest subarray with sum 0 | step03-arrays/hard/LongestSubArrayWithSumZero.java | optimal prefix-sum + HashMap O(N)/O(N) | ✅ | |
 | Count subarrays with XOR = K | step03-arrays/hard/SubArrayWithXOR_K.java | optimal prefix-XOR + HashMap O(N)/O(N) | ✅ | |
+| Merge Two Sorted Arrays Without Extra Space | step03-arrays/hard/MergeTwoSortedArray.java | optimal1 two pointers O(min(N,M) + NlogN + MlogM) · optimal2 gap method O((N+M)log(N+M)) SC:O(1) | ✅ | |
+| Merge Sorted Array (LeetCode 88) | step03-arrays/hard/MergeTwoSortedArray.java | optimal backwards two pointers O(M + N) SC:O(1) | ✅ | |
 
 ## Step 4 — Binary Search ← current
 
