@@ -93,19 +93,19 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 ### Graph Learning (Learning/)
 | Problem | File | Approaches | Status | Revisit |
 |---|---|---|---|---|
-| Graph Representation - Adjacency Matrix | step15-graphs/learning/ | Matrix O(V²) SC:O(V²) | ✅ | |
-| Graph Representation - Adjacency List | step15-graphs/learning/ | List O(V+E) SC:O(V+E) | ✅ | |
-| BFS of Graph | step15-graphs/learning/Traversals.java | queue based O(V + E) SC:O(V) | ✅ | |
-| DFS of Graph | step15-graphs/learning/Traversals.java | recursion based O(V + E) SC:O(V) | ✅ | |
-| Count the Number of Complete Components | step15-graphs/learning/ConnectedComponents.java | optimal BFS degree counting O(V + E) SC:O(V + E) | ✅ | |
+| Graph Representation - Adjacency Matrix | step15-graphs/Learning/ | Matrix O(V²) SC:O(V²) | ✅ | |
+| Graph Representation - Adjacency List | step15-graphs/Learning/ | List O(V+E) SC:O(V+E) | ✅ | |
+| BFS of Graph | step15-graphs/Learning/Traversals.java | queue based O(V + E) SC:O(V) | ✅ | |
+| DFS of Graph | step15-graphs/Learning/Traversals.java | recursion based O(V + E) SC:O(V) | ✅ | |
+| Count the Number of Complete Components | step15-graphs/Learning/ConnectedComponents.java | optimal BFS degree counting O(V + E) SC:O(V + E) | ✅ | |
 
 ### Problems-On-Traversal
 | Problem | File | Approaches | Status | Revisit |
 |---|---|---|---|---|
-| Number of Provinces | step15-graphs/learning/NumberOfProvinces.java | optimal DFS on adjacency matrix O(V²) SC:O(V) | ✅ | |
-| Find the Number of Islands | step15-graphs/learning/NumberOfIslands.java | optimal BFS (4 & 8 directions variants) O(M * N) SC:O(M * N) | ✅ | |
-| Rotting Oranges | step15-graphs/learning/RottenOranges.java | optimal multi-source BFS O(M * N) SC:O(M * N) | ✅ | |
-| Flood Fill | step15-graphs/learning/FloodFill.java | optimal BFS O(M * N) SC:O(M * N) | ✅ | |
+| Number of Provinces | step15-graphs/Problems-On-BFS-DFS/NumberOfProvinces.java | optimal DFS on adjacency matrix O(V²) SC:O(V) | ✅ | |
+| Find the Number of Islands | step15-graphs/Problems-On-BFS-DFS/NumberOfIslands.java | optimal BFS (4 & 8 directions variants) O(M * N) SC:O(M * N) | ✅ | |
+| Rotting Oranges | step15-graphs/Problems-On-BFS-DFS/RottenOranges.java | optimal multi-source BFS O(M * N) SC:O(M * N) | ✅ | |
+| Flood Fill | step15-graphs/Problems-On-BFS-DFS/FloodFill.java | optimal BFS O(M * N) SC:O(M * N) | ✅ | |
 
 ## LeetCode extras
 | Problem | File | Approaches | Status | Revisit |
