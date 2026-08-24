@@ -82,6 +82,7 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Square root / Nth root | step04-binary-search/Binary-On-Answers/NthRoot.java | binary search on the answer space O(N·log M) | ✅ | |
 | Koko Eating Bananas | step04-binary-search/Binary-On-Answers/KokoEatingBanana.java | brute linear search O(N · maxVal) · optimal binary search on answer O(N log(maxVal)) SC:O(1) | ✅ | |
 | Find the Smallest Divisor Given a Threshold | step04-binary-search/Binary-On-Answers/SmallerDivisor.java | optimal binary search on answer O(N log(maxVal)) SC:O(1) | ✅ | |
+| Minimum Days to Make m Bouquets | step04-binary-search/Binary-On-Answers/MinDaysToMakeBouquets.java | optimal binary search on answer O(N log(max-min)) SC:O(1) | ✅ | |
 
 ### Binary search on 2D matrices (Binary-2D/)
 | Problem | File | Approaches | Status | Revisit |
