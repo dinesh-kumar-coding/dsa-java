@@ -109,6 +109,7 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Find the Number of Islands | step15-graphs/Problems-On-BFS-DFS/NumberOfIslands.java | optimal BFS (4 & 8 directions variants) O(M * N) SC:O(M * N) | ✅ | |
 | Rotting Oranges | step15-graphs/Problems-On-BFS-DFS/RottenOranges.java | optimal multi-source BFS O(M * N) SC:O(M * N) | ✅ | |
 | Flood Fill | step15-graphs/Problems-On-BFS-DFS/FloodFill.java | optimal BFS O(M * N) SC:O(M * N) | ✅ | |
+| Detect Cycle in an Undirected Graph | step15-graphs/learning/DetectCycleInUndirectedGraph.java | optimal BFS O(V + E) SC:O(V) | ✅ | |
 
 ## LeetCode extras
 | Problem | File | Approaches | Status | Revisit |
