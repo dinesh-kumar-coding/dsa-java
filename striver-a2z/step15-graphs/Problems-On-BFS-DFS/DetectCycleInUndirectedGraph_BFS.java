@@ -5,7 +5,7 @@
  */
 import java.util.*;
 
-public class DetectCycleInUndirectedGraph {
+public class DetectCycleInUndirectedGraph_BFS {
   public static void main(String[] args) {
     // Test 1: Graph with a cycle
     // 0 - 1 - 2
