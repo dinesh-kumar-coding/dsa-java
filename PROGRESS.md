@@ -111,6 +111,7 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Flood Fill | step15-graphs/Problems-On-BFS-DFS/FloodFill.java | optimal BFS O(M * N) SC:O(M * N) | ✅ | |
 | Detect Cycle in an Undirected Graph Through BFS | step15-graphs/Problems-On-BFS-DFS/DetectCycleInUndirectedGraph_BFS.java | optimal BFS O(V + E) SC:O(V) | ✅ | |
 | Detect Cycle in an Undirected Graph Through DFS | step15-graphs/Problems-On-BFS-DFS/DetectCycleInUndirectedGraph_DFS.java | optimal DFS O(V + E) SC:O(V) | ✅ | |
+| Distance of nearest cell having 1 | step15-graphs/Problems-On-BFS-DFS/NearestCell.java | optimal multi-source BFS O(M * N) SC:O(M * N) | ✅ | |
 
 ## LeetCode extras
 | Problem | File | Approaches | Status | Revisit |
