@@ -112,8 +112,9 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Detect Cycle in an Undirected Graph Through BFS | step15-graphs/Problems-On-BFS-DFS/DetectCycleInUndirectedGraph_BFS.java | optimal BFS O(V + E) SC:O(V) | ✅ | |
 | Detect Cycle in an Undirected Graph Through DFS | step15-graphs/Problems-On-BFS-DFS/DetectCycleInUndirectedGraph_DFS.java | optimal DFS O(V + E) SC:O(V) | ✅ | |
 | Distance of nearest cell having 1 | step15-graphs/Problems-On-BFS-DFS/NearestCell.java | optimal multi-source BFS O(M * N) SC:O(M * N) | ✅ | |
-| Surrounded Regions | step15-graphs/learning/SurroundedRegions.java | optimal boundary DFS O(M * N) SC:O(M * N) | ✅ | |
-| Number of Enclaves | step15-graphs/learning/NumberOfEnclaves.java | optimal boundary DFS O(M * N) SC:O(M * N) | ✅ | |
+| Surrounded Regions | step15-graphs/Problems-On-BFS-DFS/SurroundedRegions.java | optimal boundary DFS O(M * N) SC:O(M * N) | ✅ | |
+| Number of Enclaves | step15-graphs/Problems-On-BFS-DFS/NumberOfEnclaves.java | optimal boundary DFS O(M * N) SC:O(M * N) | ✅ | |
+| Word Ladder I | step15-graphs/Problems-On-BFS-DFS/WordLadder_I.java | optimal BFS with character replacement O(N * M²) SC:O(N * M) | ✅ | |
 
 ## LeetCode extras
 | Problem | File | Approaches | Status | Revisit |
