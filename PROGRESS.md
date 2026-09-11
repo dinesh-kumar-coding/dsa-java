@@ -115,6 +115,7 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Surrounded Regions | step15-graphs/Problems-On-BFS-DFS/SurroundedRegions.java | optimal boundary DFS O(M * N) SC:O(M * N) | ✅ | |
 | Number of Enclaves | step15-graphs/Problems-On-BFS-DFS/NumberOfEnclaves.java | optimal boundary DFS O(M * N) SC:O(M * N) | ✅ | |
 | Word Ladder I | step15-graphs/Problems-On-BFS-DFS/WordLadder_I.java | optimal BFS with character replacement O(N * M²) SC:O(N * M) | ✅ | |
+| Detect Cycle in a Directed Graph (DFS) | step15-graphs/Problems-On-BFS-DFS/DetectCycleInDirectedGraph_DFS.java | optimal DFS with pathVisited O(V + E) SC:O(V + E) | ✅ | |
 
 ## LeetCode extras
 | Problem | File | Approaches | Status | Revisit |
