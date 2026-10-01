@@ -117,6 +117,9 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Word Ladder I | step15-graphs/Problems-On-BFS-DFS/WordLadder_I.java | optimal BFS with character replacement O(N * M²) SC:O(N * M) | ✅ | |
 | Detect Cycle in a Directed Graph (DFS) | step15-graphs/Problems-On-BFS-DFS/DetectCycleInDirectedGraph_DFS.java | optimal DFS with pathVisited O(V + E) SC:O(V + E) | ✅ | |
 
+### Topo Sort
+| Topological Sort | step15-graphs/Topo-Sort/TopoSort.java | optimal_1 DFS + stack O(V + E) · optimal_2 BFS Kahn's algorithm O(V + E) SC:O(V) | ✅ | |
+
 ## LeetCode extras
 | Problem | File | Approaches | Status | Revisit |
 |---|---|---|---|---|
