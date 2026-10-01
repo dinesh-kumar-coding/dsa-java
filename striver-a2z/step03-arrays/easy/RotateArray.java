@@ -1,5 +1,6 @@
 /*
  * Problem: Rotate array left/right by K (reversal algorithm) — Striver A2Z Step 3 (easy)
+ * Question: Rotate the array by K positions in place, using the reversal algorithm.
  * Migrated: 2026-07-17 | TC: O(N), SC: O(1)
  * Revisit: [date]
  */

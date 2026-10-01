@@ -1,5 +1,6 @@
 /*
  * Topic: Insertion sort (iterative + recursive) — Striver A2Z Step 2
+ * Question: Grow a sorted prefix by taking each next element and inserting it into its correct position among the elements before it.
  * Migrated: 2026-07-17 | TC: O(N^2) worst/avg, O(N) best
  * Revisit: [date when re-solved from scratch]
  */

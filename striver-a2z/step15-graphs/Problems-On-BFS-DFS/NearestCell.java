@@ -1,5 +1,6 @@
 /*
  * Problem: Distance of nearest cell having 1 (01 Matrix variant) — Optimal: Multi-source BFS
+ * Question: For every cell of a binary matrix, find the distance to the nearest 1 — multi-source BFS from all the 1s at once.
  * Solved: 26-08-2026 | TC: O(M * N) | SC: O(M * N)
  * Revisit: [date]
  */
@@ -36,7 +37,7 @@ public class NearestCell {
     printMatrix(nearest(grid2));
     // Expected Output:
     // [1, 0, 0, 1]
-    // [0, 0, 1, 2]
+    // [0, 0, 1, 1]
     // [1, 1, 0, 0]
   }
 

@@ -1,5 +1,6 @@
 /*
  * Problem: NthRoot (N-th Root) — Optimal: Binary Search
+ * Question: Find the integer N-th root of a number, or -1 if the number is not a perfect N-th power.
  * Solved: 15-08-2026 | TC: O(N * log(M)) where M is num | SC: O(1)
  * Revisit: [date]
  */

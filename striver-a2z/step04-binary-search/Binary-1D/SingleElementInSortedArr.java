@@ -1,5 +1,6 @@
 /*
  * Problem: SingleElementInSortedArr — Optimal: Binary Search | Brute: XOR Sweep
+ * Question: Every element appears twice except one and the array is sorted — find the single element in O(log N).
  * Solved: 04-08-2026 | TC: O(log N) Optimal, O(N) Brute | SC: O(1)
  * Revisit: [date]
  */

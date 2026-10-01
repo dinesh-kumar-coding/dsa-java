@@ -1,5 +1,6 @@
 /*
  * Problem: MinDaysToMakeBouquets — Optimal: Binary Search on Answer
+ * Question: Given each flower's bloom day, find the earliest day on which M bouquets of K adjacent flowers can be made.
  * Solved: 23-08-2026 | TC: O(N * log(max - min)) | SC: O(1)
  * Revisit: [date]
  */

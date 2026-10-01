@@ -1,5 +1,6 @@
 /*
  * Problem: Print the matrix in spiral manner — Striver A2Z Step 3 (medium)
+ * Question: Return all elements of a matrix in spiral order.
  * Solved: 2026-07-20 | TC: O(N*M), SC: O(1) if considered else O(N*M) for extra list.
  * Revisit: [date]
  */

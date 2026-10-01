@@ -1,5 +1,6 @@
 /*
  * Problem: SmallerDivisor — Optimal: Binary Search on Answer
+ * Question: Find the smallest divisor such that the sum of every element divided by it, rounded up, stays within a given threshold.
  * Solved: 17-08-2026 | TC: O(N * log(maxVal)) | SC: O(1)
  * Revisit: [date]
  */

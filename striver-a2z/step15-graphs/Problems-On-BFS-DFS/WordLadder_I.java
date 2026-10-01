@@ -1,5 +1,6 @@
 /*
  * Problem: Word Ladder I — Optimal: BFS
+ * Question: Find the length of the shortest transformation sequence from the start word to the target, changing one letter at a time, every intermediate word being in the dictionary.
  * Solved: 10-09-2026 | TC: O(N * M^2) | SC: O(N * M) 
  * Revisit: [date]
  * Note: N = number of words in list, M = length of each word

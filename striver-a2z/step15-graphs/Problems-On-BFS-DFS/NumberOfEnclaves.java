@@ -1,5 +1,6 @@
 /*
  * Problem: Number of Enclaves — Optimal: DFS from Boundaries
+ * Question: Count the land cells that cannot reach the boundary — flood inward from the border first, then count what survives.
  * Solved: 10-09-2026 | TC: O(M * N) | SC: O(M * N)
  * Revisit: [date]
  */

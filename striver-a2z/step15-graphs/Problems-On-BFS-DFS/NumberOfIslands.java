@@ -1,6 +1,7 @@
 
 /*
  * Problem: Number of Islands (4 Directions & 8 Directions) — Optimal: BFS
+ * Question: Count the islands of 1s in a grid — both the 4-direction (LeetCode) and 8-direction (GFG) variants.
  * Solved: 19-08-2026 | TC: O(M * N) | SC: O(M * N)
  * Revisit: [date]
  */

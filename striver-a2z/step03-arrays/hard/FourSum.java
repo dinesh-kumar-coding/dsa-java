@@ -1,5 +1,6 @@
 /*
  * Problem: FourSum — Optimal: Sort & Two Pointers | Better: Hashing | Brute: 4 Loops
+ * Question: Find all unique quadruplets in the array that sum to the target.
  * Solved: 06-08-2026 | TC: O(N^3) Optimal, O(N^3) Better, O(N^4) Brute | SC: O(1) Optimal, O(N) Better
  * Revisit: [date]
  */

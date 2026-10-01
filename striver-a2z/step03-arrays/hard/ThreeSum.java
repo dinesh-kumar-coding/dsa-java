@@ -1,5 +1,6 @@
 /*
  * Problem: ThreeSum — Optimal: Sort & Two Pointers | Better: Hashing | Brute: 3 Loops
+ * Question: Find all unique triplets in the array that sum to zero.
  * Solved: 06-08-2026 | TC: O(N^2) Optimal, O(N^2) Better, O(N^3) Brute | SC: O(1) Optimal, O(N) Better
  * Revisit: [date]
  */

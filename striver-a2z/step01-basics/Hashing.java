@@ -1,5 +1,6 @@
 /*
  * Topic: Hashing basics — Striver A2Z Step 1
+ * Question: Pre-compute frequencies once (array or HashMap) so later queries answer in O(1) — count occurrences of numbers/characters and find the highest-occurring one.
  * Migrated: 2026-07-17 (from original Main.java)
  * Revisit: [date when re-solved from scratch]
  */

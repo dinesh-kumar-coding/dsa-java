@@ -1,5 +1,6 @@
 /*
  * Problem: Number appearing once, others twice (XOR) — Striver A2Z Step 3 (easy)
+ * Question: Every element appears twice except one — find the element that appears only once.
  * Migrated: 2026-07-17 | TC: O(N), SC: O(1)
  * Revisit: [date]
  */

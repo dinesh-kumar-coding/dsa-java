@@ -1,5 +1,6 @@
 /*
  * Problem: Next permutation — Striver A2Z Step 3 (medium) / LeetCode 31
+ * Question: Rearrange the numbers into the next lexicographically greater permutation in place; if none exists, return the smallest arrangement.
  * Solved: 2026-07-20 | TC: O(N), SC: O(1)
  * Steps: (1) first decreasing element from right (2) swap with rightmost greater (3) reverse suffix
  * Revisit: [date]

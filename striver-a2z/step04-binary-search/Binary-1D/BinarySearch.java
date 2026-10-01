@@ -1,5 +1,6 @@
 /*
  * Topic: Binary Search — Striver A2Z Step 4 (fundamentals)
+ * Question: Search a sorted array in O(log N), iteratively and recursively, plus lower bound (first index >= x) and upper bound (first index > x).
  * Written: 2026-07-29
  * Approaches: iterative + recursive binary search · lower bound · upper bound
  * Revisit: [date when re-solved from scratch]

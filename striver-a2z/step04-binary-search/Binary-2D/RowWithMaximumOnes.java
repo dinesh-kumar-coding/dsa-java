@@ -1,5 +1,6 @@
 /*
  * Problem: RowWithMaximumOnes — Optimal: Binary Search (Sorted Rows) | Brute: Full Traversal
+ * Question: In a matrix whose rows are sorted (all 0s then all 1s), find the row containing the most 1s.
  * Solved: 16-08-2026 | TC: O(M * log N) Optimal, O(M * N) Brute | SC: O(1)
  * Revisit: [date]
  */

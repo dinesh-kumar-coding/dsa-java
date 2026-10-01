@@ -1,5 +1,6 @@
 /*
  * Problem: TimesSortArrRot — Optimal: Binary Search (Find Min Index)
+ * Question: A sorted array was rotated an unknown number of times — find how many, which equals the index of the minimum element.
  * Solved: 07-08-2026 | TC: O(log N) Avg, O(N) Worst (Duplicates) | SC: O(1)
  * Revisit: [date]
  */

@@ -1,5 +1,6 @@
 /*
  * Problem: Sort array of 0s, 1s, 2s (Dutch national flag) — Striver A2Z Step 3 (medium) / LeetCode 75
+ * Question: Sort an array containing only 0s, 1s and 2s in a single pass (Dutch National Flag).
  * Migrated: 2026-07-17 | Target TC: O(N) one pass
  * Revisit: [date]
  */

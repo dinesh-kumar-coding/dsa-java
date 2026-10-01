@@ -1,5 +1,6 @@
 /*
  * Problem: Best time to buy and sell stock — Striver A2Z Step 3 (medium) / LeetCode 121
+ * Question: Given daily prices, find the maximum profit from buying once and selling on a later day.
  * Solved: 2026-07-18 | TC: O(N), SC: O(1) — track min-so-far, max the diff
  * Revisit: [date]
  */

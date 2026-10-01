@@ -1,5 +1,6 @@
 /*
  * Problem: KokoEatingBanana — Optimal: Binary Search on Answer | Brute: Linear Search
+ * Question: Given piles of bananas and H hours, find the minimum eating speed that still finishes every pile in time.
  * Solved: 17-08-2026 | TC: O(N * log(maxVal)) Optimal, O(N * maxVal) Brute | SC: O(1)
  * Revisit: [date]
  */

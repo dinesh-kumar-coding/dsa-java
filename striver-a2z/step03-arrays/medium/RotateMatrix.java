@@ -1,5 +1,6 @@
 /*
  * Topic: Rotate Matrix by 90° — Striver A2Z Step 3 (Arrays medium)
+ * Question: Rotate an N x N matrix by 90 degrees clockwise, in place.
  * Migrated: 2026-07-27 (from old-STRIVER monolith) | TC: brute O(N^2) + O(N^2) space · optimal O(N^2) + O(1) space (transpose + reverse rows)
  * Revisit: [date when re-solved from scratch]
  * NOTE: optimal is correct. brute has 2 things to find — run main and watch what brute does (and doesn't) do to the matrix.

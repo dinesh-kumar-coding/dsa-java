@@ -1,5 +1,6 @@
 /*
  * Problem: Leaders in an array — Striver A2Z Step 3 (medium)
+ * Question: An element is a leader if it is greater than everything to its right — list all leaders.
  * Solved: 2026-07-20 | TC: O(N), SC: O(1) extra — right-to-left running max
  * Revisit: [date]
  */

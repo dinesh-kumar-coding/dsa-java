@@ -1,5 +1,6 @@
 /*
  * Problem: Surrounded Regions (Replace O's with X's) — Optimal: DFS from Boundaries
+ * Question: Flip every region of Os that is completely surrounded by Xs; regions touching the border survive.
  * Solved: 10-09-2026 | TC: O(M * N) | SC: O(M * N)
  * Revisit: [date]
  */

@@ -1,5 +1,6 @@
 /*
  * Topic: Binary Search — First & Last Occurrence · Count Occurrences (Striver A2Z Step 4)
+ * Question: In a sorted array find the first and last index of a target, and hence how many times it occurs.
  * Written: 2026-07-30
  * first/last are lower/upper-bound cousins · count = (first == -1) ? 0 : last - first + 1
  * Revisit: [date when re-solved from scratch]

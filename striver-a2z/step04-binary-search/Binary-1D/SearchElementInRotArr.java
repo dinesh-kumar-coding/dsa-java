@@ -1,5 +1,6 @@
 /*
  * Problem: SearchElementInRotArr I & II — Optimal: Binary Search
+ * Question: Search for a target in a rotated sorted array — both the distinct and the with-duplicates versions.
  * Solved: 07-08-2026 | TC: O(log N) Avg, O(N) Worst (Duplicates) | SC: O(1)
  * Revisit: [date]
  */

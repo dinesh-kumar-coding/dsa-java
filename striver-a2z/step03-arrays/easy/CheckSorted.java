@@ -1,5 +1,6 @@
 /*
  * Problem: Check if array is sorted — Striver A2Z Step 3 (easy)
+ * Question: Check whether an array is sorted in non-decreasing order, plus the variant asking whether it is sorted AND rotated.
  * Migrated: 2026-07-17 | TC: O(N)
  * Revisit: [date]
  */

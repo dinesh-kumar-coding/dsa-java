@@ -1,5 +1,6 @@
 /*
  * Topic: Merge sort — Striver A2Z Step 2
+ * Question: Divide the array in half, sort each half recursively, then merge the two sorted halves back into one.
  * Migrated: 2026-07-17 | TC: O(N log N), SC: O(N)
  * Revisit: [date when re-solved from scratch]
  */

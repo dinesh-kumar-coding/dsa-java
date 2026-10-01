@@ -1,5 +1,6 @@
 /*
  * Problem: GraphRepresentation — Adjacency Matrix (Unweighted)
+ * Question: Represent an unweighted graph as a V x V matrix where [u][v] marks an edge. O(V^2) space.
  * Solved: 18-08-2026 | TC: O(V^2) to print, O(E) to build | SC: O(V^2)
  * Revisit: [date]
  */
@@ -18,7 +19,7 @@ public class AdjacencyMatrix {
       int u = scanner.nextInt();
       int v = scanner.nextInt();
       adj[u][v] = 1;
-      adj[v][u] = 1;
+      adj[v][u] = 1; // If undirectional
     }
 
     System.out.println("--- Adjacency Matrix ---");

@@ -1,5 +1,6 @@
 /*
  * Topic: Count Subarrays with Sum K — Striver A2Z Step 3 (Arrays medium) · LeetCode 560
+ * Question: Count how many contiguous subarrays sum to exactly K (the array may contain negatives).
  * Written: 2026-07-29
  * Approaches: brute O(N^2)/O(1) · optimal prefix-sum + HashMap O(N)/O(N) (works with negatives) · sliding window O(N)/O(1) (positive numbers only)
  * Revisit: [date when re-solved from scratch]

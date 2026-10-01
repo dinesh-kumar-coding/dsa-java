@@ -1,5 +1,6 @@
 /*
  * Problem: Longest subarray with sum K — Striver A2Z Step 3 (easy)
+ * Question: Find the length of the longest subarray whose elements sum to exactly K.
  * Migrated: 2026-07-17
  * Brute: O(N^2) | Better (pos+neg): prefix-sum + HashMap O(N) | Optimal (pos only): two pointers O(N)
  * Revisit: [date]

@@ -1,5 +1,6 @@
 /*
  * Problem: PascalTriangle — Row-by-row Math Recurrence (nCr)
+ * Question: Three variants — the single element at (row, col), one complete row, and the whole triangle up to N rows.
  * Solved: 03-08-2026 | TC: O(N^2) Optimal, O(N^3) Brute | SC: O(N^2)
  * Revisit: [date]
  */

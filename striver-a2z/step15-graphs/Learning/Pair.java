@@ -1,5 +1,6 @@
 /*
  * Utility: Generic Pair Class for Weighted Graphs
+ * Question: Small generic utility class holding two values — used when a queue or list needs to carry (node, distance) style pairs.
  * Created: 18-08-2026
  */
 public class Pair<X, Y> {

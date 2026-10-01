@@ -1,5 +1,6 @@
 /*
  * Problem: Move zeros to end — Striver A2Z Step 3 (easy)
+ * Question: Move every 0 to the end of the array while preserving the order of the non-zero elements.
  * Migrated: 2026-07-17 | Brute: O(N) + O(N) space; Optimal: O(N), O(1) space (two pointers)
  * Revisit: [date]
  */

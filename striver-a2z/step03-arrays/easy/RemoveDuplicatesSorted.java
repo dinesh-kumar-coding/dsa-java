@@ -1,5 +1,6 @@
 /*
  * Problem: Remove duplicates from sorted array (two pointers) — Striver A2Z Step 3 (easy)
+ * Question: Remove duplicates in place from a sorted array and return the count of unique elements.
  * Migrated: 2026-07-17 | TC: O(N)
  * Revisit: [date]
  */

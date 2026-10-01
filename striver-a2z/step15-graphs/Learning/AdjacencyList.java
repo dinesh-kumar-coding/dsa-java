@@ -1,5 +1,6 @@
 /*
  * Problem: GraphRepresentation — Adjacency List (Unweighted)
+ * Question: Represent an unweighted graph as an adjacency list — a list of neighbours per vertex. O(V+E) space.
  * Solved: 18-08-2026 | TC: O(V + E) to print, O(E) to build | SC: O(V + E)
  * Revisit: [date]
  */
@@ -17,7 +18,7 @@ public class AdjacencyList {
 
     ArrayList<Integer>[] adj = new ArrayList[V + 1];
 
-    for (int i = 0; i <= V; i++) {
+    for (int i = 0; i <= V; i++) { // If starting node is 1
       adj[i] = new ArrayList<>();
     }
 

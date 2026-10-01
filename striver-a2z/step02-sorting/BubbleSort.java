@@ -1,5 +1,6 @@
 /*
  * Topic: Bubble sort (iterative + recursive) — Striver A2Z Step 2
+ * Question: Repeatedly swap adjacent out-of-order elements so the largest value bubbles to the end each pass; exit early when a pass makes no swaps.
  * Migrated: 2026-07-17 | TC: O(N^2) worst/avg, O(N) best (early-exit flag)
  * Revisit: [date when re-solved from scratch]
  */

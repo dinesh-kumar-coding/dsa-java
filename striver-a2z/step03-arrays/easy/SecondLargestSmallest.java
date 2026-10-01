@@ -1,5 +1,6 @@
 /*
  * Problem: Second largest / second smallest — Striver A2Z Step 3 (easy)
+ * Question: Find the second largest and second smallest elements in a single pass, without sorting.
  * Migrated: 2026-07-17 | TC: O(N) single pass
  * Revisit: [date]
  */

@@ -1,5 +1,6 @@
 /*
  * Problem: Detect Cycle in an Undirected Graph — Optimal: DFS
+ * Question: Detect a cycle in an UNDIRECTED graph using DFS, passing the parent down through the recursion.
  * Solved: 26-08-2026 | TC: O(V + E) | SC: O(V)
  * Revisit: [date]
  */
@@ -44,17 +45,17 @@ public class DetectCycleInUndirectedGraph_DFS {
     boolean[] vis = new boolean[V];
     for(int i = 0; i < V; i++){
       if(!vis[i]){
-        if(dfs(i, -1, adj, vis)) return true;
+        if(checkForCycle(i, -1, adj, vis)) return true;
       }
     }
     return false;
   }
 
-  public static boolean dfs(int node, int parent, ArrayList<ArrayList<Integer>> adj, boolean[] vis){
+  public static boolean checkForCycle(int node, int parent, ArrayList<ArrayList<Integer>> adj, boolean[] vis){
     vis[node] = true;
     for(int adjacentNode: adj.get(node)){
       if(!vis[adjacentNode]){
-        if(dfs(adjacentNode, node, adj, vis)) return true;
+        if(checkForCycle(adjacentNode, node, adj, vis)) return true;
       } else if(adjacentNode != parent) return true;
     }
     return false;

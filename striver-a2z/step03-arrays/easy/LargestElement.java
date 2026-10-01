@@ -1,5 +1,6 @@
 /*
  * Problem: Largest element in array — Striver A2Z Step 3 (easy)
+ * Question: Return the largest element in the array.
  * Migrated: 2026-07-17 | TC: O(N)
  * Revisit: [date]
  */

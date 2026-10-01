@@ -1,5 +1,6 @@
 /*
  * Problem: Number of Connected Components & Count Complete Components
+ * Question: Count the connected components of an undirected graph, plus the variant counting only components that are complete (every pair directly connected).
  * Solved: 18-08-2026 | TC: O(V + E) | SC: O(V + E)
  * Revisit: [date]
  */
@@ -12,17 +13,17 @@ public class ConnectedComponents {
     // Test 1: 5 vertices, 2 components: {0,1,2} and {3,4}
     int V1 = 5;
     int[][] edges1 = {{0, 1}, {1, 2}, {3, 4}};
-    System.out.println("Test 1: " + countComponents(V1, edges1)); // Expected: 2
+    System.out.println("Test 1: " + countComponents_bfs(V1, edges1)); // Expected: 2
 
     // Test 2: 4 vertices, 1 component (fully connected)
     int V2 = 4;
     int[][] edges2 = {{0, 1}, {1, 2}, {2, 3}, {0, 3}};
-    System.out.println("Test 2: " + countComponents(V2, edges2)); // Expected: 1
+    System.out.println("Test 2: " + countComponents_bfs(V2, edges2)); // Expected: 1
 
     // Test 3: 4 vertices, 4 components (no edges)
     int V3 = 4;
     int[][] edges3 = {};
-    System.out.println("Test 3: " + countComponents(V3, edges3)); // Expected: 4
+    System.out.println("Test 3: " + countComponents_bfs(V3, edges3)); // Expected: 4
 
     System.out.println("\n--- Complete Connected Components ---");
     // Test 4: 6 vertices. Components: {0,1,2} (complete), {3,4} (complete), {5} (complete)
@@ -36,7 +37,7 @@ public class ConnectedComponents {
     System.out.println("Test 5: " + completeComponents_bfs(V5, edges5)); // Expected: 1
   } 
   
-  public static int countComponents(int V, int[][] edges){
+  public static int countComponents_bfs(int V, int[][] edges){
     
     List<List<Integer>> adj = new ArrayList<>();
     for(int i = 0; i < V; i++){
@@ -70,6 +71,39 @@ public class ConnectedComponents {
       }
     }
     return components;
+  }
+
+  public static int countComponents_dfs(int V, int[][] edges){
+    List<List<Integer>> adj = new ArrayList<>();
+    for(int i = 0; i < V; i++){
+      adj.add(new ArrayList<>());
+    }
+    for(int[] edge: edges){
+      adj.get(edge[0]).add(edge[1]);
+      adj.get(edge[1]).add(edge[0]);
+    }
+
+    boolean[] visited = new boolean[V];
+    int components = 0;
+
+    for(int i = 0; i < V; i++){
+      if(!visited[i]){
+        components++;
+        countComponents_dfs_helper(i, adj, visited);
+      }
+    }
+
+    return components;
+  }
+
+  public static void countComponents_dfs_helper(int node, List<List<Integer>> adj, boolean[] visited){
+    visited[node] = true;
+
+    for(int neighborNode : adj.get(node)){
+      if(!visited[neighborNode]){
+        countComponents_dfs_helper(neighborNode, adj, visited);
+      }
+    }
   }
 
   public static int completeComponents_bfs(int V, int[][] edges){

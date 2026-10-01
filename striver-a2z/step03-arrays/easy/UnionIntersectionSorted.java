@@ -1,5 +1,6 @@
 /*
  * Problem: Union and intersection of two sorted arrays — Striver A2Z Step 3 (easy)
+ * Question: Given two sorted arrays, produce their union and their intersection.
  * Migrated: 2026-07-17 | TC: O(N1+N2)
  * WARNING: known bug in union (j <= n2 out-of-bounds risk + flawed else) — fix session pending
  * Revisit: [date]

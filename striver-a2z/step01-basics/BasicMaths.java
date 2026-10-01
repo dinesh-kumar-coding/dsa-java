@@ -1,6 +1,7 @@
 /*
  * Topic: Basic maths — Striver A2Z Step 1
- * Migrated: 2026-07-17 (from original Main.java)
+ * Question: Classic number drills — reverse a number, check palindrome and Armstrong, count divisors, test primality, and compute GCD by the Euclidean algorithm.
+ * Migrated: 2026-07-17
  * Revisit: [date when re-solved from scratch]
  */
 import java.util.*;

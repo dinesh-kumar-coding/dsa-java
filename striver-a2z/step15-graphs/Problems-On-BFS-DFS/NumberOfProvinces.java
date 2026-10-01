@@ -1,5 +1,6 @@
 /*
  * Problem: Number of Provinces — Optimal: DFS on Adjacency Matrix
+ * Question: Given an adjacency matrix of cities, count how many connected groups (provinces) there are.
  * Solved: 19-08-2026 | TC: O(V^2) | SC: O(V)
  * Revisit: [date]
  */

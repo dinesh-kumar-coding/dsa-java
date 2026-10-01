@@ -1,5 +1,6 @@
 /*
  * Topic: Set Matrix Zeroes — Striver A2Z Step 3 (Arrays medium)
+ * Question: If any cell is 0, set that cell's entire row and column to 0 — ideally using O(1) extra space.
  * Migrated: 2026-07-27 (from old-STRIVER monolith) | TC: brute O((N*M)*(N+M)), better O(N*M) + O(N+M) space, optimal O(N*M) + O(1) space
  * Revisit: [date when re-solved from scratch]
  */

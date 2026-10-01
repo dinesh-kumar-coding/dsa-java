@@ -1,5 +1,6 @@
 /*
  * Problem: Two sum — Striver A2Z Step 3 (medium) / LeetCode 1
+ * Question: Find the two numbers that add up to the target and return their indices.
  * Migrated: 2026-07-17
  * HashMap (returns indices): O(N) | Two pointers after sort (yes/no variant): O(N log N)
  * Revisit: [date]

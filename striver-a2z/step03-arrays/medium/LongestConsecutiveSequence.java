@@ -1,5 +1,6 @@
 /*
  * Topic: Longest Consecutive Sequence — Striver A2Z Step 3 (Arrays medium)
+ * Question: Find the length of the longest run of consecutive integers present in the array (order in the array does not matter).
  * Migrated: 2026-07-27 (from old-STRIVER monolith) | TC: brute O(N^2), better O(N log N), optimal O(N)
  * Revisit: [date when re-solved from scratch]
  */

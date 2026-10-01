@@ -1,5 +1,6 @@
 /*
  * Problem: RottenOranges — Optimal: Multi-source BFS
+ * Question: Rotten oranges infect their fresh neighbours each minute — find the minutes until none are fresh, or -1 if some never rot.
  * Solved: 20-08-2026 | TC: O(M * N) | SC: O(M * N)
  * Revisit: [date]
  */

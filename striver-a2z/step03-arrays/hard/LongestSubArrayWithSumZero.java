@@ -1,5 +1,6 @@
 /*
  * Problem: LongestSubArrayWithSumZero — Optimal: Prefix Sum & HashMap
+ * Question: Find the length of the longest subarray whose elements sum to 0.
  * Solved: 14-08-2026 | TC: O(N) | SC: O(N)
  * Revisit: [date]
  */

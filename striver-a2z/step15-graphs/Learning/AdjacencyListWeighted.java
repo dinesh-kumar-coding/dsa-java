@@ -1,5 +1,6 @@
 /*
  * Problem: GraphRepresentation — Adjacency List (Weighted)
+ * Question: Adjacency list for a weighted graph — each entry stores a neighbour together with its edge weight.
  * Solved: 18-08-2026 | TC: O(V + E) to print, O(E) to build | SC: O(V + E)
  * Revisit: [date]
  */
@@ -17,7 +18,7 @@ public class AdjacencyListWeighted {
 
     ArrayList<Pair<Integer, Integer>>[] adj = new ArrayList[V + 1];
 
-    for (int i = 0; i <= V; i++) {
+    for (int i = 0; i <= V; i++) { // If starting node is 1
       adj[i] = new ArrayList<>();
     }
 

@@ -1,5 +1,6 @@
 /*
  * Problem: Graph Traversals (BFS & DFS)
+ * Question: The two fundamental graph traversals — BFS using a queue, DFS using recursion.
  * Solved: 18-08-2026 | TC: O(V + E) | SC: O(V)
  * Revisit: [date]
  */

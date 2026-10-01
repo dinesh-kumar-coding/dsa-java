@@ -1,5 +1,6 @@
 /*
  * Problem: FloodFill — Optimal: BFS
+ * Question: Starting from one pixel, recolour every connected pixel that shares its original colour.
  * Solved: 20-08-2026 | TC: O(M * N) | SC: O(M * N)
  * Revisit: [date]
  */

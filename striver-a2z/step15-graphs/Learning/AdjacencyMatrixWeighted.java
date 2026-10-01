@@ -1,5 +1,6 @@
 /*
  * Problem: GraphRepresentation — Adjacency Matrix (Weighted)
+ * Question: Adjacency matrix for a weighted graph — [u][v] stores the weight of the edge instead of a flag.
  * Solved: 18-08-2026 | TC: O(V^2) to print, O(E) to build | SC: O(V^2)
  * Revisit: [date]
  */
@@ -19,7 +20,7 @@ public class AdjacencyMatrixWeighted {
       int v = scanner.nextInt();
       int weight = scanner.nextInt();
       adj[u][v] = weight;
-      adj[v][u] = weight;
+      adj[v][u] = weight; // If undirectional
     }
 
     System.out.println("--- Weighted Adjacency Matrix ---");

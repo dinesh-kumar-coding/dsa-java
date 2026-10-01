@@ -1,5 +1,6 @@
 /*
  * Problem: Rearrange array elements by sign (alternating +/-) — Striver A2Z Step 3 (medium) / LeetCode 2149
+ * Question: Rearrange the array so positive and negative numbers alternate, preserving their relative order.
  * Solved: 2026-07-18 | Brute: O(N) two lists + refill | Optimal: O(N) single pass, indexed placement
  * Revisit: [date]
  */

@@ -1,5 +1,6 @@
 /*
  * Problem: MajorityElement-2 — Optimal: Boyer-Moore Voting | Brute: HashMap Counting
+ * Question: Find every element that appears more than N/3 times — there can be at most two.
  * Solved: 03-08-2026 | TC: O(N) Optimal, O(N) Brute | SC: O(1) Optimal, O(N) Brute
  * Revisit: [date]
  */

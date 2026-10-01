@@ -1,5 +1,6 @@
 /*
  * Topic: Selection sort — Striver A2Z Step 2
+ * Question: Repeatedly select the smallest element from the unsorted part and swap it into the next position.
  * Migrated: 2026-07-17 | TC: O(N^2)
  * Revisit: [date when re-solved from scratch]
  */

@@ -1,5 +1,6 @@
 /*
  * Problem: Majority element (> N/2) — Striver A2Z Step 3 (medium) / LeetCode 169
+ * Question: Find the element that appears more than N/2 times.
  * Migrated: 2026-07-17
  * HashMap: O(N) time, O(N) space | Optimal: Boyer-Moore voting O(N) time, O(1) space
  * Revisit: [date]

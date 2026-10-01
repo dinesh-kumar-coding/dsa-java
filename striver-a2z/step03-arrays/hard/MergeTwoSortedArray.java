@@ -1,5 +1,6 @@
 /*
  * Problem: MergeTwoSortedArray — Optimal 1 (Two Pointers + Sort) | Optimal 2 (Shell Sort) | LeetCode 88
+ * Question: Merge two sorted arrays into overall sorted order using O(1) extra space, plus the LeetCode-88 variant that merges into the first array.
  * Solved: 23-08-2026 | TC: O(min(N,M) + NlogN + MlogM) Opt1, O((N+M) * log(N+M)) Opt2, O(M+N) LeetCode | SC: O(1)
  * Revisit: [date]
  */

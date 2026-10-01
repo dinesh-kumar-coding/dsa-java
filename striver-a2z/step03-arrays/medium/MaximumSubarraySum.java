@@ -1,5 +1,6 @@
 /*
  * Problem: Maximum subarray sum (Kadane's algorithm) — Striver A2Z Step 3 (medium) / LeetCode 53
+ * Question: Find the maximum sum of any contiguous subarray (Kadane's), plus the variant that also prints the subarray itself.
  * Solved: 2026-07-18 | TC: O(N), SC: O(1)
  * Includes follow-up variant: return the actual subarray (start/end tracking)
  * Revisit: [date]

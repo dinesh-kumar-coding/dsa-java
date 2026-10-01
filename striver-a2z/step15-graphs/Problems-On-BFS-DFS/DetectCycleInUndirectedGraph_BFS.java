@@ -1,5 +1,6 @@
 /*
  * Problem: DetectCycleInUndirectedGraph — Optimal: BFS
+ * Question: Detect a cycle in an UNDIRECTED graph using BFS, carrying each node's parent along in the queue.
  * Solved: 25-08-2026 | TC: O(V + E) | SC: O(V)
  * Revisit: [date]
  */

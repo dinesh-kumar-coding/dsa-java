@@ -1,5 +1,6 @@
 /*
  * Topic: Quick sort — Striver A2Z Step 2
+ * Question: Pick a pivot, partition so smaller elements sit left and larger sit right, then recurse on both sides.
  * Migrated: 2026-07-17 | TC: O(N log N) avg, O(N^2) worst
  * Revisit: [date when re-solved from scratch]
  */

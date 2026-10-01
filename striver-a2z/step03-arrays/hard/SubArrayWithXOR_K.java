@@ -1,5 +1,6 @@
 /*
  * Problem: SubArrayWithXOR_K — Optimal: Prefix XOR & HashMap
+ * Question: Count how many contiguous subarrays have XOR exactly K.
  * Solved: 14-08-2026 | TC: O(N) | SC: O(N)
  * Revisit: [date]
  */

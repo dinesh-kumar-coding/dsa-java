@@ -1,5 +1,6 @@
 /*
  * Topic: Binary Search — Search Insert Position · Floor · Ceil (Striver A2Z Step 4)
+ * Question: In a sorted array: the index where a target should be inserted, plus its floor (largest value <= x) and ceiling (smallest value >= x).
  * Written: 2026-07-30
  * Revisit: [date when re-solved from scratch]
  */

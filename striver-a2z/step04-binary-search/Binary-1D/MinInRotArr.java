@@ -1,5 +1,6 @@
 /*
  * Problem: MinInRotArr I & II — Optimal: Binary Search
+ * Question: Find the minimum element in a rotated sorted array — both the distinct and the with-duplicates versions.
  * Solved: 07-08-2026 | TC: O(log N) Avg, O(N) Worst (Duplicates) | SC: O(1)
  * Revisit: [date]
  */

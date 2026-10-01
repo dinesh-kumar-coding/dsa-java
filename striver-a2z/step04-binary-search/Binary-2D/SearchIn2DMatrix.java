@@ -1,5 +1,6 @@
 /*
  * Problem: SearchIn2DMatrix — Optimal: Flattened Binary Search
+ * Question: Search a matrix where each row is sorted and every row starts above the previous row's last value — treat it as one flattened sorted array.
  * Solved: 15-08-2026 | TC: O(log(M * N)) | SC: O(1)
  * Revisit: [date]
  */

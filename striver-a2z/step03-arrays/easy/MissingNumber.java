@@ -1,5 +1,6 @@
 /*
  * Problem: Missing number 1..N (XOR trick) — Striver A2Z Step 3 (easy)
+ * Question: One number from 1..N is missing from the array — find it.
  * Migrated: 2026-07-17 | TC: O(N), SC: O(1)
  * Revisit: [date]
  */

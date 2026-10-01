@@ -1,5 +1,6 @@
 /*
  * Problem: SearchIn2DMatrixII — Optimal: Step-wise Search | Better: Binary Search per Row
+ * Question: Search a matrix where rows and columns are each sorted independently — walk a staircase inward from a corner.
  * Solved: 17-08-2026 | TC: O(M + N) Optimal, O(M * log N) Better | SC: O(1)
  * Revisit: [date]
  */

@@ -1,5 +1,6 @@
 /*
  * Problem: PeakElement — Optimal: Binary Search
+ * Question: Find any peak — an element strictly greater than both its neighbours — in O(log N).
  * Solved: 14-08-2026 | TC: O(log N) | SC: O(1)
  * Revisit: [date]
  */

@@ -1,5 +1,6 @@
 /*
  * Problem: Detect Cycle in a Directed Graph — Optimal: DFS (Path Visited Array)
+ * Question: Detect a cycle in a DIRECTED graph using DFS with both a visited and a path-visited array.
  * Solved: 11-09-2026 | TC: O(V + E) | SC: O(V + E)
  * Revisit: [date]
  */

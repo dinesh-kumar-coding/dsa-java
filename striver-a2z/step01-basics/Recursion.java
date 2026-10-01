@@ -1,5 +1,6 @@
 /*
  * Topic: Recursion basics — Striver A2Z Step 1
+ * Question: Foundational recursion drills — print 1..N and N..1, sum and factorial, reverse an array, check palindrome, including the backtracking variants.
  * Migrated: 2026-07-17 (from original Main.java)
  * Revisit: [date when re-solved from scratch]
  */
