@@ -116,8 +116,12 @@ Legend: ✅ done · 🔁 due for revisit · ⚠️ known bug (fix session pendin
 | Number of Enclaves | step15-graphs/Problems-On-BFS-DFS/NumberOfEnclaves.java | optimal boundary DFS O(M * N) SC:O(M * N) | ✅ | |
 | Word Ladder I | step15-graphs/Problems-On-BFS-DFS/WordLadder_I.java | optimal BFS with character replacement O(N * M²) SC:O(N * M) | ✅ | |
 | Detect Cycle in a Directed Graph (DFS) | step15-graphs/Problems-On-BFS-DFS/DetectCycleInDirectedGraph_DFS.java | optimal DFS with pathVisited O(V + E) SC:O(V + E) | ✅ | |
+| Detect Cycle in a Directed Graph (BFS) | step15-graphs/Problems-On-BFS-DFS/DetectCycleInDirectedGraph_BFS.java | optimal Kahn's algorithm — indegree + BFS, cycle iff placed count ≠ V, O(V + E) SC:O(V) | ✅ | |
+| Bipartite Graph | step15-graphs/Problems-On-BFS-DFS/BipartiteGraph.java | optimal_1 DFS 2-colouring · optimal_2 BFS 2-colouring, both O(V + E) SC:O(V) | ✅ | |
 
 ### Topo Sort
+| Problem | File | Approaches | Status | Revisit |
+|---|---|---|---|---|
 | Topological Sort | step15-graphs/Topo-Sort/TopoSort.java | optimal_1 DFS + stack O(V + E) · optimal_2 BFS Kahn's algorithm O(V + E) SC:O(V) | ✅ | |
 
 ## LeetCode extras
