@@ -85,3 +85,43 @@ A greedy algorithm builds its answer by making the choice that looks best right 
 **Not in the file yet:** the brute force, which recursively tries every jump, in exponential time; and the dynamic programming approach, which works out the fewest jumps for every position in O(N²) time.
 
 **Remember:** each window is one level of a breadth-first search, so counting the windows counts the jumps. The method relies on the last position being reachable; if a window adds no new positions, the loop makes no progress, so that case needs a check whenever the guarantee is missing.
+
+## N meetings in one room
+**File:** [NMeetingsInOneRoom.java](NMeetingsInOneRoom.java), method `maxMeetings`
+
+**Question.** There is one room and N meetings, each with a start time and an end time. Only one meeting can run at a time, and a meeting can only start strictly after the previous one has ended, so a start time equal to the previous end time is a clash. Find the largest number of meetings that can be held.
+
+**Optimal — sort by end time, then always take the meeting that ends first.** The method copies each start and end time into a pair and sorts the pairs by end time with `Integer.compare`. It then walks them in that order, remembering when the last chosen meeting ended, starting from −1 so that a meeting at time 0 can still be chosen, and takes every meeting that starts after that moment. The meeting that ends earliest leaves the most time for everything after it, so no other choice can fit more meetings.
+
+- **Time:** O(N log N) for the sort; the walk is O(N).
+- **Extra space:** O(N) for the array of pairs.
+
+**Not in the file yet:** the brute force, which tries every subset of meetings, in exponential time.
+
+**Remember:** sort by end time, not by start time; the meeting that starts first can be a long one that blocks everything else. Read the problem's rule for touching meetings: here a meeting that starts exactly when another ends is a clash, so the check is strictly greater, while problems that allow touching need greater-or-equal.
+
+## Order of the meetings in one room
+**File:** [NMeetingsInOneRoom.java](NMeetingsInOneRoom.java), method `maxMeetings_order`
+
+**Question.** The same problem, but return which meetings are held, in the order they happen. When two meetings end at the same time, the one that comes first in the input is preferred.
+
+**Optimal — the same greedy, carrying each meeting's position.** Each meeting is stored as a triple of its position in the input, its start time and its end time. The sort orders the triples by end time and, when two end times are equal, by position, so the earlier meeting in the input comes first. The walk is the same as before, except that the position of every chosen meeting is added to a list, which ends up in the order the meetings are held. The positions are counted from 0.
+
+- **Time:** O(N log N) for the sort.
+- **Extra space:** O(N) for the triples and the list.
+
+**Remember:** sorting mixes the meetings up, so each meeting's original position has to be stored before the sort; afterwards it cannot be recovered. Many versions of this problem number the meetings from 1, so check whether the answer needs 1 added to every position.
+
+## Non-overlapping intervals
+**File:** [NonOverlappingIntervals.java](NonOverlappingIntervals.java), method `eraseOverlappingIntervals`
+
+**Question.** Given a list of intervals, return the smallest number of intervals to remove so that the rest do not overlap. Intervals that only touch at an end point, such as [1, 2] and [2, 3], do not overlap (LeetCode 435).
+
+**Optimal — keep as many intervals as possible, then subtract.** Removing the fewest intervals is the same as keeping the most, and keeping the most is the meetings problem again. The method sorts the intervals by end time and keeps every interval that starts at or after the end of the last kept one. The last end starts at the smallest possible `int`, so the first interval is always kept, even when the coordinates are negative. The answer is the total number of intervals minus the number kept.
+
+- **Time:** O(N log N) for the sort.
+- **Extra space:** O(N) in the worst case for Java's sort of an array of arrays; the walk itself needs O(1).
+
+**Not in the file yet:** the brute force, which tries every subset of intervals, in exponential time.
+
+**Remember:** this is [N meetings in one room](#n-meetings-in-one-room) with one difference: touching intervals are allowed, so the check is greater-or-equal instead of strictly greater. Sorting rearranges the array that was passed in, so copy it first if the original order is still needed.

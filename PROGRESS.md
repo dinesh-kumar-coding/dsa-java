@@ -181,6 +181,9 @@ Legend: ✅ done · 🔁 due for revisit · 🔨 in progress
 | [Maximum units on a truck](striver-a2z/step10-greedy_algo/README.md#maximum-units-on-a-truck) | step10-greedy_algo/FractionalKnapsack.java | Sort the box types by units per box, largest first, and load boxes until the truck is full. | ✅ | |
 | [Jump game I](striver-a2z/step10-greedy_algo/README.md#jump-game-i) | step10-greedy_algo/JumpGame_I.java | Track the furthest position reachable so far; if the walk ever goes past it, the end cannot be reached. | ✅ | |
 | [Jump game II](striver-a2z/step10-greedy_algo/README.md#jump-game-ii) | step10-greedy_algo/JumpGame_II.java | Treat the positions reachable with each number of jumps as a window, and grow one window per jump until it covers the last position. | ✅ | |
+| [N meetings in one room](striver-a2z/step10-greedy_algo/README.md#n-meetings-in-one-room) | step10-greedy_algo/NMeetingsInOneRoom.java | Sort the meetings by end time and take every meeting that starts strictly after the last chosen one ends. | ✅ | |
+| [Order of the meetings in one room](striver-a2z/step10-greedy_algo/README.md#order-of-the-meetings-in-one-room) | step10-greedy_algo/NMeetingsInOneRoom.java | Run the same greedy while carrying each meeting's original position, breaking ties on end time by position. | ✅ | |
+| [Non-overlapping intervals](striver-a2z/step10-greedy_algo/README.md#non-overlapping-intervals) | step10-greedy_algo/NonOverlappingIntervals.java | Keep the most intervals with the meetings greedy, this time allowing touching ends, and remove the rest. | ✅ | |
 
 ## Step 15 — Graphs
 
