@@ -185,6 +185,18 @@ Legend: ✅ done · 🔁 due for revisit · 🔨 in progress
 | [Order of the meetings in one room](striver-a2z/step10-greedy_algo/README.md#order-of-the-meetings-in-one-room) | step10-greedy_algo/NMeetingsInOneRoom.java | Run the same greedy while carrying each meeting's original position, breaking ties on end time by position. | ✅ | |
 | [Non-overlapping intervals](striver-a2z/step10-greedy_algo/README.md#non-overlapping-intervals) | step10-greedy_algo/NonOverlappingIntervals.java | Keep the most intervals with the meetings greedy, this time allowing touching ends, and remove the rest. | ✅ | |
 
+## Step 12 — Stack and Queues
+
+### Implementation (Implementation/)
+| Problem | File | Idea | Status | Revisit |
+|---|---|---|---|---|
+| [Implement a stack using an array](striver-a2z/step12-stack_queues/Implementation/README.md#implement-a-stack-using-an-array) | step12-stack_queues/Implementation/StackUsingArrays.java | Keep the values in a fixed-size array with the index of the top, moving it up on a push and down on a pop. | ✅ | |
+| [Implement a queue using an array](striver-a2z/step12-stack_queues/Implementation/README.md#implement-a-queue-using-an-array) | step12-stack_queues/Implementation/QueueUsingArrays.java | Keep a front index, a rear index and a count, moving both indices forward around the array in a circle. | ✅ | |
+| [Implement a stack using a linked list](striver-a2z/step12-stack_queues/Implementation/README.md#implement-a-stack-using-a-linked-list) | step12-stack_queues/Implementation/StackUsingLL.java | Push and pop at the head of a linked list, keeping a reference to the top node and a count. | ✅ | |
+| [Implement a queue using a linked list](striver-a2z/step12-stack_queues/Implementation/README.md#implement-a-queue-using-a-linked-list) | step12-stack_queues/Implementation/QueueUsingLL.java | Link new nodes after the rear and remove them from the front, keeping references to both ends and a count. | ✅ | |
+| [Implement a stack using a queue](striver-a2z/step12-stack_queues/Implementation/README.md#implement-a-stack-using-a-queue) | step12-stack_queues/Implementation/StackUsingQueue.java | After every push, rotate the older values from the front to the back so the newest value is always at the front. | ✅ | |
+| [Implement a queue using stacks](striver-a2z/step12-stack_queues/Implementation/README.md#implement-a-queue-using-stacks) | step12-stack_queues/Implementation/QueueUsingStack.java | Either reverse the values through a second stack on every push, or pop from an output stack that is refilled from the input stack only when it is empty. | ✅ | |
+
 ## Step 15 — Graphs
 
 ### Learning the basics (Learning/)
